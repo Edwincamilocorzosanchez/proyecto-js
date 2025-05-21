@@ -21,7 +21,7 @@ body {
   perspective: 1000px;
 }
 
-.card-inner {
+.frente-tarjeta {
   width: 100%;
   height: 100%;
   gap: 10px;
@@ -30,11 +30,11 @@ body {
   position: relative;
 }
 
-.card.flipped .card-inner {
+.card.flipped .frente-tarjeta {
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.trasera-tarjeta, .detras-tarjeta {
   position: absolute;
   width: 100%;
   
@@ -46,39 +46,39 @@ body {
   overflow: hidden;
 }
 
-.card-front img {
+.trasera-tarjeta img {
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
 
-.card-front, .card-back {
+.trasera-tarjeta, .detras-tarjeta {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
 }
 
-.card-front .title {
+.trasera-tarjeta .title {
   font-weight: bold;
   font-size: 1.2em;
 }
 
-.card-front .description {
+.trasera-tarjeta .description {
   font-size: 0.9em;
   flex-grow: 1;
   margin-top: 10px;
 }
 
-.card-back {
+.detras-tarjeta {
   transform: rotateY(180deg);
   overflow-y: auto;
 }
 
-.card-back::-webkit-scrollbar {
+.detras-tarjeta::-webkit-scrollbar {
   width: 6px;
 }
-.card-back::-webkit-scrollbar-thumb {
+.detras-tarjeta::-webkit-scrollbar-thumb {
   background: #007bff;
   border-radius: 10px;
 }

@@ -1,6 +1,8 @@
-fetch('courses.json')
+fetch('data/courses.json')
   .then(response => response.json())
-  .then(courses => {
+  .then(data => {
+    const courses = data.cards; // Aquí seleccionas solo 'tarjetas'
+
     const container = document.getElementById('courses-container');
 
     courses.forEach(course => {
@@ -8,11 +10,11 @@ fetch('courses.json')
       card.classList.add('card');
 
       card.innerHTML = `
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-tags">
-                <span class="tag level">Beginner</span>
-                <span class="tag duration">8 weeks</span>
+        <div class="frente-tarjeta">
+          <div class="trasera-tarjeta">
+            <div class="tarjeta-etiquetas">
+              <span class="etiqueta level">${course.tag}</span>
+              <span class="etiqueta duration">${course.tag_2}</span>
             </div>
             <img src="${course.image}" alt="${course.title}" />
             <div class="title">${course.title}</div>
@@ -22,7 +24,7 @@ fetch('courses.json')
               <button class="info-btn">More Info</button>
             </div>
           </div>
-          <div class="card-back">
+          <div class="detras-tarjeta">
             <h3>Prerequisites</h3>
             <p>${course.prerequisites}</p>
             <h3>What You'll Learn</h3>
@@ -36,13 +38,69 @@ fetch('courses.json')
 
       container.appendChild(card);
 
-      const inner = card.querySelector('.card-inner');
-      card.querySelector('.info-btn').addEventListener('click', () => {
+      const infoBtn = card.querySelector('.info-btn');
+      const closeBtn = card.querySelector('.close-btn');
+
+      infoBtn.addEventListener('click', () => {
         card.classList.add('flipped');
       });
-      card.querySelector('.close-btn').addEventListener('click', () => {
+
+      closeBtn.addEventListener('click', () => {
         card.classList.remove('flipped');
       });
     });
   });
 
+
+fetch('data/courses.json')
+  .then(response => response.json())
+  .then(data => {
+    const courses = data.tarjetas; // Aquí seleccionas solo 'tarjetas'
+
+    const container = document.getElementById('courses-containe');
+
+    courses.forEach(course => {
+      const card = document.createElement('div');
+      card.classList.add('card');
+
+      card.innerHTML = `
+        <div class="frente-tarjeta">
+          <div class="trasera-tarjeta">
+            <div class="tarjeta-etiquetas">
+              <span class="etiqueta level">${course.tag}</span>
+              <span class="etiqueta duration">${course.tag_2}</span>
+            </div>
+            <img src="${course.image}" alt="${course.title}" />
+            <div class="title">${course.title}</div>
+            <div class="description">${course.description}</div>
+            <div class="card-buttons">
+              <button class="enroll-btn">Enroll Now</button>
+              <button class="info-btn">More Info</button>
+            </div>
+          </div>
+          <div class="detras-tarjeta">
+            <h3>Prerequisites</h3>
+            <p>${course.prerequisites}</p>
+            <h3>What You'll Learn</h3>
+            <p>${course.whatYouWillLearn}</p>
+            <h3>Course Structure</h3>
+            <p>${course.structure}</p>
+            <button class="close-btn">Close</button>
+          </div>
+        </div>
+      `;
+
+      container.appendChild(card);
+
+      const infoBtn = card.querySelector('.info-btn');
+      const closeBtn = card.querySelector('.close-btn');
+
+      infoBtn.addEventListener('click', () => {
+        card.classList.add('flipped');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        card.classList.remove('flipped');
+      });
+    });
+  });
