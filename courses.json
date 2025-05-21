@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Unity Game Development",
+    "description": "Create immersive 3D games with Unity. Learn C# programming, game physics, and professional game development...",
+    "image": "img/img-tarjeta.jpeg",
+    "prerequisites": "Basic programming knowledge in any language. Understanding of 3D geometry is helpful but not required.",
+    "whatYouWillLearn": "Build complete 3D games, master C# programming, implement game physics, create engaging UI systems, and optimize game performance.",
+    "structure": "24 interactive lessons, 12 hands-on projects, 4 major game development assignments, and a final capstone project."
+  },
+  {
+    "title": "Unreal Engine Basics",
+    "description": "Master the fundamentals of Unreal Engine 5. Cover Blueprint visual scripting, level design, and game...",
+    "image": "img/img-tarjeta2.jpeg",
+    "prerequisites": "No prior experience required. Basic computer skills and understanding of gaming concepts recommended.",
+    "whatYouWillLearn": "Create basic games using Blueprints, design game levels, implement basic AI, and understand game optimization techniques.",
+    "structure": "16 lessons, 8 practical exercises, 4 mini-projects, and a final game project."
+  },
+    {
+    "title": "Unity Game Development",
+    "description": "Create immersive 3D games with Unity.",
+    "image": "img/img-tarjeta3.jpeg",
+    "prerequisites": "Basic programming knowledge in any language. Understanding of 3D geometry is helpful but not required.",
+    "whatYouWillLearn": "Build complete 3D games, master C# programming, implement game physics, create engaging UI systems, and optimize game performance.",
+    "structure": "24 interactive lessons, 12 hands-on projects, 4 major game development assignments, and a final capstone project."
+  }
+]
