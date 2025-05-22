@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+}
+
+.course-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  background: white;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-left: 4px solid transparent;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  background-color: #e6f0ff;
+  border-left: 4px solid #2979ff;
+}
+
+.sidebar .step {
+  background: #ddd;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.sidebar li.active .step {
+  background: #2979ff;
+  color: white;
+}
+
+.sidebar .info .title {
+  font-weight: 600;
+}
+
+.sidebar .info .time {
+  font-size: 12px;
+  color: #555;
+}
+
+.course-content {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.back {
+  text-decoration: none;
+  color: #2979ff;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.video-wrapper {
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 8px;
+}
