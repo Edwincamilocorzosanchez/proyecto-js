@@ -1,11 +1,15 @@
+body{
+    background-color: #e0d2d23b;
+}
 .tarjetas{
     align-items: center;
     justify-content: space-around;
     display: flex;
 }
+.tarjetas h1{
+    color: #3ec3f4;
+}
 .tarje1{
-    grid-column-start: 2;
-    grid-row-start: 2;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 5px;
@@ -14,8 +18,6 @@
     transition: transform 0.3s ease-in-out;  
 }
 .tarje2{
-    grid-column-start: 2;
-    grid-row-start: 2;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 5px;
@@ -24,8 +26,6 @@
     transition: transform 0.3s ease-in-out;  
 }
 .tarje3{
-    grid-column-start: 2;
-    grid-row-start: 2;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 5px;
@@ -47,10 +47,78 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.cursos{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.curso1{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
+}
+.curso1 img{
+    width: 100%;
+    height: 200px;
+}
+.curso1:hover{
+     transform: translateY(-5px);
+}
+.verde{
+    color: rgb(2, 255, 171);
+}
+.lado{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.buttoncursos{
+    text-align: center;
+}
+.buttoncursos button{
+    background-color: #3ec3f4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.curso2{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
+}
+.curso2 img{
+    width: 100%;
+    height: 200px;
+}
+.curso2:hover{
+     transform: translateY(-5px);
+}
+.curso3{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
+}
+.curso3 img{
+    width: 100%;
+    height: 200px;
+}
+.curso3:hover{
+     transform: translateY(-5px);
+}
 .recientes{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    background-color: #fff7f7;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 5px;
     text-align: left;
@@ -58,19 +126,23 @@
     transition: transform 0.3s ease-in-out;  
 }
 .a1{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    background-color: #ece3e3;
+    background-color: #eeeeee;
     border-radius: 10px;
     padding: 5px;
     text-align: left;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;  
 }
+.imgactividad{
+    align-items: center;
+    display: flex;
+}
+.imgactividad img{
+    width: 40px;
+    border-radius: 60%;
+}
 .a2{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    background-color: #ece3e3;
+    background-color: #eeeeee;
     border-radius: 10px;
     padding: 5px;
     text-align: left;
@@ -78,9 +150,7 @@
     transition: transform 0.3s ease-in-out;  
 }
 .a3{
-    grid-column-start: 2;
-    grid-row-start: 2;
-    background-color: #ece3e3;
+    background-color: #eeeeee;
     border-radius: 10px;
     padding: 5px;
     text-align: left;
