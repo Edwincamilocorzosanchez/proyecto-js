@@ -25,8 +25,13 @@ body {
   color: #1d4ed8;
   text-decoration: none; /* Evita subrayado al hacer hover */
 }
-
-
+.boton{
+  border-radius: 80%;
+}
+.start{
+  text-decoration: none;
+  color: #fff;
+}
 
 .course-header {
   position: relative;

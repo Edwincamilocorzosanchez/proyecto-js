@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <li>✅ 30-day money-back guarantee</li>
               <li>✅ Direct instructor support</li>
             </ul>
-            <button>Start Learning</button>
+            <button class="boton"><a href="Course-Topics.html" class="start">Start Learning</a></button>
           </div>
     </div>
 

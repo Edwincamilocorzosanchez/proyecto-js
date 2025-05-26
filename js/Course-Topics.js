@@ -28,7 +28,8 @@ const topicsData = [
     video: "https://www.youtube.com/embed/3JluqTojuME",
     description: "Deep dive into the core concepts that are fundamental for this course.",
     resources: [
-      { text: "📄 Core Concepts Notes", link: "#" }
+      { text: "📄 Concept Map", link: "#" },
+      { text: "📝 Practice Exercises", link: "#" }
     ]
   },
   {
@@ -37,7 +38,8 @@ const topicsData = [
     video: "https://www.youtube.com/embed/3JluqTojuME",
     description: "Explore advanced techniques and best practices.",
     resources: [
-      { text: "📄 Advanced Techniques PDF", link: "#" }
+      { text: "📝 Advanced Guide", link: "#" },
+      { text: "📄 Code Examples", link: "#" }
     ]
   }
 ];
@@ -165,11 +167,3 @@ nextBtn && nextBtn.addEventListener('click', () => {
 // ===============================
 updateUI();
 
-/*
-COMENTARIOS:
-- El botón "Mark as Complete" ahora funciona como toggle: marca y desmarca el tema como completado.
-- El botón se pone verde y dice "Completed" cuando el tema está completado.
-- El chulo y el borde verde aparecen solo cuando el tema está completado.
-- El progreso se actualiza automáticamente.
-- Todo queda guardado en localStorage.
-*/
