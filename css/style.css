@@ -37,6 +37,7 @@ h3 {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
+  margin: auto;
 }
 
 .card {
@@ -93,8 +94,6 @@ h3 {
   display: block;
 }
 
-
-
 .etiqueta {
   position: absolute;
   padding: 5px 10px;
@@ -117,7 +116,6 @@ h3 {
   top: 10px;
   right: 10px;
 }
-
 
 /* Contenido frontal */
 .trasera-tarjeta {
@@ -186,6 +184,7 @@ button:hover {
 .detras-tarjeta-content::-webkit-scrollbar {
   width: 6px;
 }
+
 .detras-tarjeta-content::-webkit-scrollbar-thumb {
   background: #007bff;
   border-radius: 10px;
@@ -201,4 +200,71 @@ button:hover {
   border-radius: 6px;
   cursor: pointer;
   font-size: 1.0em;
+}
+
+/* === RESPONSIVE === */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .card-grid {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 280px;
+    height: 400px;
+  }
+
+  .trasera-tarjeta .title {
+    font-size: 1.1em;
+  }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+    height: 420px;
+    margin: 0 auto;
+  }
+
+  .trasera-tarjeta .description {
+    font-size: 0.9em;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .etiqueta {
+    font-size: 0.7em;
+    padding: 4px 8px;
+  }
 }
