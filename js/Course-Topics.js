@@ -39,7 +39,7 @@ const topicsData = [
     description: "Explore advanced techniques and best practices.",
     resources: [
       { text: "📝 Advanced Guide", link: "#" },
-      { text: "📄 Code Examples", link: "#" }
+      { text: "📄 Code Examples ", link: "#" }
     ]
   }
 ];
