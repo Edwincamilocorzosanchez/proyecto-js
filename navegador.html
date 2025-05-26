@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/panel.css">
+</head>
+<body>
+        
+    <nav class="navbar" id="navbar">
+        <a href="#" class="navbar-brand">
+            LMS
+            <span class="portal">Portal</span>
+        </a>
+        <ul class="navbar-nav" id="navbarNav">
+            <li class="nav-item">
+                <div class="nav-link active" onclick="loadPage('panel.html')">Dashboard</div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link" onclick="loadPage('cursos.html')">Courses</div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link" onclick="loadPage('assignments.html')">Assignments</div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link" onclick="loadPage('progress.html')">Progress</div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link" onclick="loadPage('profile.html')">Profile</div>
+            </li>
+        </ul>
+
+        <div class="navbar-right">
+            <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                <span id="themeIcon">☀️</span>
+            </button>
+
+            <div class="language-select-container">
+                <select class="language-select" id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                </select>
+            </div>
+
+            <div class="user-menu" id="userMenu">
+                <div class="user-avatar">JD</div>
+                <div class="user-info">
+                    <div class="user-name">John</div>
+                    <div class="user-role">Doe</div>
+                </div>
+                <span class="dropdown-arrow">▼</span>
+
+                <div class="user-dropdown" id="userDropdown">
+                    <div class="dropdown-item">
+                        <span class="dropdown-icon profile">👤</span>
+                        My Profile
+                    </div>
+                    <div class="dropdown-item">
+                        <span class="dropdown-icon settings">⚙️</span>
+                        Settings
+                    </div>
+                    <div class="dropdown-item logout">
+                        <span class="dropdown-icon logout">🚪</span>
+                        Logout
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            ☰
+        </button>
+    </nav>
+
+    <!-- Contenedor para el iframe -->
+    <div id="content-container">
+        <iframe id="contentFrame" src="panel.html" frameborder="0" style="width: 100%; height: 80vh;"></iframe>
+    </div>
+
+    <script src="js/navegador.js"></script>
+    <script>
+        // Función para cargar las páginas dentro del iframe
+        function loadPage(page) {
+            document.getElementById('contentFrame').src = page;
+        }
+    </script>
+</body>
+</html>
