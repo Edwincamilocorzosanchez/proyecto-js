@@ -132,7 +132,20 @@ body {
   color: #888; /* Tiempo en gris */
   margin-left: 8px;
 }
+.back-button {
+  display: flex;
+  margin: 20px;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none; /* Quita subrayado por defecto */
+  transition: color 0.2s ease;
+}
 
+.back-button:hover {
+  color: #1d4ed8;
+  text-decoration: none; /* Evita subrayado al hacer hover */
+}
 /* =========================
    Contenido principal
    ========================= */
