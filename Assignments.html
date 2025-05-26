@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Assignments</title>
+  <link rel="stylesheet" href="css/Assignments.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Your Assignments</h1>
+    <div class="alert">
+      ⚠️ Some assignments require course completion before submission.
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button class="filter-btn" data-filter="overdue">Overdue</button>
+      <button class="filter-btn" data-filter="locked">Locked</button>
+    </div>
+
+    <section class="assignments">
+      <div class="section-title">
+        <i class="fas fa-laptop"></i> Web Development
+      </div>
+      <div class="card" data-status="pending" data-title="Final Project: E-commerce Platform" data-type="Project" data-points="100" data-desc="Build a complete e-commerce platform using React, Node.js, and MongoDB. Implement user authentication, product management, shopping cart, and payment processing." data-course="Full Stack Development" data-due="Mar 14, 2024">
+        <div class="card-header">
+          <div class="status pending">
+            <i class="fas fa-hourglass-half"></i> Pending
+          </div>
+          <div style="flex:1">
+            <h2 class="card-title">Final Project: E-commerce Platform</h2>
+            <a class="card-subtitle" href="#">Full Stack Development</a>
+          </div>
+          <div class="due-date">
+            <i class="fas fa-calendar-alt"></i> Due: Mar 14, 2024
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Build a complete e-commerce platform using React, Node.js, and MongoDB. Implement user authentication, product management, shopping cart, and payment processing.</p>
+          <div class="details">
+            <span class="points"><i class="fas fa-star"></i> Points: 100</span>
+            <span class="type"><i class="fas fa-file-alt"></i> Type: Project</span>
+            <span class="modules"><i class="fas fa-graduation-cap"></i> Required Modules: Frontend Development, Backend Integration, Database Design</span>
+          </div>
+          <div class="attachments">
+            <i class="fas fa-paperclip"></i> 2 attachment(s)
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="submit-btn"><i class="fas fa-cloud-upload-alt"></i> Submit Assignment</button>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <i class="fas fa-chart-bar"></i> Data Science
+      </div>
+      <div class="card locked" data-status="locked">
+        <div class="card-header">
+          <div class="status locked">
+            <i class="fas fa-lock"></i> Locked
+          </div>
+          <div style="flex:1">
+            <h2 class="card-title">Data Analysis Report</h2>
+          </div>
+          <div class="due-date">
+            <i class="fas fa-calendar-alt"></i> Due: Mar 19, 2024
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Analyze the provided dataset using Python and Pandas. Create visualizations and write a comprehensive report on your findings.</p>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <i class="fas fa-check-circle"></i> Completed Assignments
+      </div>
+      <div class="card" data-status="completed">
+        <div class="card-header">
+          <div class="status completed">
+            <i class="fas fa-check"></i> Completed
+          </div>
+          <div style="flex:1">
+            <h2 class="card-title">Responsive Landing Page</h2>
+            <a class="card-subtitle" href="#">Frontend Basics</a>
+          </div>
+          <div class="due-date">
+            <i class="fas fa-calendar-alt"></i> Due: Feb 28, 2024
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Create a responsive landing page using HTML, CSS, and JavaScript. Ensure mobile compatibility and accessibility.</p>
+          <div class="details">
+            <span class="points"><i class="fas fa-star"></i> Points: 50</span>
+            <span class="type"><i class="fas fa-file-alt"></i> Type: Assignment</span>
+            <span class="modules"><i class="fas fa-graduation-cap"></i> Required Modules: HTML, CSS, JS</span>
+          </div>
+          <div class="attachments">
+            <i class="fas fa-paperclip"></i> 1 attachment(s)
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="submit-btn" disabled style="opacity:0.6;cursor:not-allowed;"><i class="fas fa-check"></i> Submitted</button>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <i class="fas fa-exclamation-triangle"></i> Overdue Assignments
+      </div>
+      <div class="card" data-status="overdue">
+        <div class="card-header">
+          <div class="status overdue">
+            <i class="fas fa-exclamation-triangle"></i> Overdue
+          </div>
+          <div style="flex:1">
+            <h2 class="card-title">API Integration Task</h2>
+            <a class="card-subtitle" href="#">Backend Basics</a>
+          </div>
+          <div class="due-date">
+            <i class="fas fa-calendar-alt"></i> Due: Feb 10, 2024
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Integrate a third-party API and display the data dynamically. Handle errors and edge cases gracefully.</p>
+          <div class="details">
+            <span class="points"><i class="fas fa-star"></i> Points: 40</span>
+            <span class="type"><i class="fas fa-file-alt"></i> Type: Task</span>
+            <span class="modules"><i class="fas fa-graduation-cap"></i> Required Modules: API, JS</span>
+          </div>
+          <div class="attachments">
+            <i class="fas fa-paperclip"></i> 1 attachment(s)
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="submit-btn"><i class="fas fa-cloud-upload-alt"></i> Submit Assignment</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- MODAL DE ENTREGA -->
+  <div id="submission-modal" class="modal-overlay" style="display:none;">
+    <div class="modal">
+      <button class="modal-close" title="Close">&times;</button>
+      <h2>Submit Assignment</h2>
+      <div class="modal-meta">
+        <a class="card-subtitle" id="modal-course" href="#"></a>
+        <span class="due-date" id="modal-due"></span>
+      </div>
+      <div class="modal-card">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <div class="details">
+          <span class="points" id="modal-points"></span>
+          <span class="type" id="modal-type"></span>
+        </div>
+      </div>
+      <form class="modal-form" id="modal-form">
+        <label for="submission-notes">Submission Notes <span style="color:#ff4d4f">*</span></label>
+        <textarea id="submission-notes" required placeholder="Describe your work and any important notes about your submission..."></textarea>
+        <label style="margin-top:18px;">Attachments <span style="color:#888;font-weight:400;">(optional)</span></label>
+        <div class="file-drop" id="file-drop">
+          <i class="fas fa-paperclip"></i>
+          <span>Drag and drop files here or</span>
+          <input type="file" id="file-input" multiple style="display:none;">
+          <button type="button" id="browse-btn">Browse Files</button>
+          <div id="file-list"></div>
+        </div>
+        <button type="submit" class="submit-btn" style="margin-top:24px;"><i class="fas fa-cloud-upload-alt"></i> Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/Assignments.js"></script>
+</body>
+</html>

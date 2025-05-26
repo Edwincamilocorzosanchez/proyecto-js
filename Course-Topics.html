@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Course-Topics.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Topics</title>
+  <link rel="stylesheet" href="css/Course-Topics.css">
 </head>
+
 <body>
-    <div class="course-container">
-  <aside class="sidebar">
-    <h2>Course Topics</h2>
-    <p>0/4 completed</p>
-    <ul>
-      <li class="active">
-        <span class="step">1</span>
-        <div class="info">
-          <p class="title">Introduction to the Course</p>
-          <p class="time">10 min</p>
-        </div>
-      </li>
-      <li>
-        <span class="step">2</span>
-        <div class="info">
-          <p class="title">Getting Started with Tools</p>
-          <p class="time">15 min</p>
-        </div>
-      </li>
-      <li>
-        <span class="step">3</span>
-        <div class="info">
-          <p class="title">Core Concepts</p>
-          <p class="time">20 min</p>
-        </div>
-      </li>
-      <li>
-        <span class="step">4</span>
-        <div class="info">
-          <p class="title">Advanced Techniques</p>
-          <p class="time">25 min</p>
-        </div>
-      </li>
-    </ul>
-  </aside>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Course Topics <span id="progress">0/4 completed</span></h2>
+      <ul id="topic-list">
+        <li data-id="1" class="active">
+          <div class="checkmark">1</div>
+          <span class="topic-title">1. Introduction to the Course</span>
+          <span class="topic-time">10 min</span>
+        </li>
+        <li data-id="2">
+          <div class="checkmark">2</div>
+          <span class="topic-title">2. Getting Started with Tools</span>
+          <span class="topic-time">15 min</span>
+        </li>
+        <li data-id="3">
+          <div class="checkmark">3</div>
+          <span class="topic-title">3. Core Concepts</span>
+          <span class="topic-time">20 min</span>
+        </li>
+        <li data-id="4">
+          <div class="checkmark">4</div>
+          <span class="topic-title">4. Advanced Techniques</span>
+          <span class="topic-time">25 min</span>
+        </li>
+      </ul>
+    </aside>
+    <main class="content">
+      <div class="video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+      <h1>Introduction to the Course</h1>
+      <p>Overview of what you will learn in this course and how to get the most out of it.</p>
 
-  <main class="course-content">
-    <a href="#" class="back">← Back to Course</a>
-    <div class="video-wrapper">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        title="Rick Astley" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <h2>Introduction to the Course</h2>
-    <p>Overview of what you will learn in this course and how to get the most out of it.</p>
-  </main>
-</div>
+      <section class="resources">
+        <h3>Additional Resources</h3>
+        <ul>
+          <li><a href="#">📄 Course Syllabus</a></li>
+          <li><a href="#">🛠️ Setup Instructions</a></li>
+        </ul>
+      </section>
 
+      <div class="navigation">
+        <button id="prev-btn" class="prev" disabled>← Previous Topic</button>
+        <button class="complete-btn" id="complete-btn">Mark as complete</button>
+        <button id="next-btn" class="next">Next Topic →</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/Course-Topics.js"></script>
 </body>
+
 </html>
