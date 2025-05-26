@@ -237,6 +237,7 @@ body{
 
 
 /* Mobile menu toggle */
+/* Navbar CSS */
 .mobile-menu-toggle {
   display: none;
   background: transparent;
@@ -310,9 +311,12 @@ body{
   text-align: center;
   cursor: pointer;
 }
-.nav-link a{
+
+.navbar a,
+.navbar a:hover,
+.navbar a:focus {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 .nav-link:hover {
@@ -376,9 +380,7 @@ body{
   transition: all 0.3s ease;
   font-weight: 500;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 8px center;
   background-size: 16px;
@@ -402,19 +404,11 @@ body{
   font-weight: 500;
 }
 
-.navbar.dark-mode .language-select {
+.navbar.dark-mode .language-select,
+.navbar.dark-mode .language-select:hover,
+.navbar.dark-mode .language-select option {
   background: rgba(255,255,255,0.1);
   border-color: rgba(255,255,255,0.2);
-  color: #e2e8f0;
-}
-
-.navbar.dark-mode .language-select:hover {
-  background: rgba(255,255,255,0.2);
-  border-color: rgba(255,255,255,0.3);
-}
-
-.navbar.dark-mode .language-select option {
-  background: #2d3748;
   color: #e2e8f0;
 }
 
@@ -568,212 +562,67 @@ body{
   color: #fc8181;
 }
 
-/* Content area styles */
-.content {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.demo-info {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.demo-info h2 {
-  color: #2c3e50;
-  margin-bottom: 15px;
-}
-
-.demo-info p {
-  color: #7f8c8d;
-  line-height: 1.6;
-}
-
-.demo-info ul {
-  text-align: left;
-  margin: 20px 0;
-  color: #7f8c8d;
-}
-
-.demo-info li {
-  margin-bottom: 8px;
-}
-
-/* Responsive styles */
+/* Responsive */
 @media (max-width: 992px) {
   .navbar-nav {
-      max-width: 400px;
+    max-width: 400px;
   }
-  
   .nav-link {
-      padding: 18px 10px;
-      font-size: 14px;
+    padding: 18px 10px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .mobile-menu-toggle {
-      display: block;
-      order: 3;
+    display: block;
+    order: 3;
   }
-  
   .navbar {
-      padding: 0 10px;
-      flex-wrap: wrap;
-      height: auto;
-      min-height: 60px;
+    flex-wrap: wrap;
+    height: auto;
   }
-  
-  .navbar-brand {
-      font-size: 18px;
-      order: 1;
-  }
-  
-  .navbar-right {
-      order: 2;
-      gap: 10px;
-      margin-right: 0;
-  }
-  
   .navbar-nav {
-      order: 4;
-      width: 100%;
-      flex-direction: column;
-      background: rgba(0,0,0,0.1);
-      margin: 0;
-      max-width: none;
-      display: none;
-      padding: 10px 0;
+    order: 4;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    display: none;
   }
-  
   .navbar-nav.show {
-      display: flex;
+    display: flex;
   }
-  
   .nav-item {
-      width: 100%;
-      text-align: left;
-      padding: 980px;
+    text-align: left;
+    width: 100%;
   }
-  
   .nav-link {
-      padding: 12px 20px;
-      font-size: 16px;
-      text-align: left;
-      border-radius: 0;
-      text-decoration: none;
-  }
-  /* Asegurarse de quitar el subrayado y el color azul en todos los enlaces */
-  /* Asegúrate de eliminar el subrayado y el color azul en los enlaces dentro de .navbar */
-.navbar a {
-  text-decoration: none; /* Eliminar subrayado */
-  color: inherit; /* Usar el color por defecto del texto */
-}
-
-/* Asegurarse de que los enlaces en .navbar no tengan color azul ni subrayado en hover */
-.navbar a:hover,
-.navbar a:focus {
-  text-decoration: none; /* Eliminar subrayado en hover y focus */
-  color: inherit; /* Usar el color por defecto o cambiarlo si lo deseas */
-}
-
-/* Para los enlaces activos */
-.nav-link.active {
-  color: #3498db; /* Puedes personalizar el color de los enlaces activos */
-  background-color: rgba(52, 152, 219, 0.15); /* Puedes cambiar el fondo si lo deseas */
-  font-weight: 600;
-}
-
-/* Para los enlaces en la barra de navegación sin hover ni active */
-.navbar .nav-link {
-  color: #bdc3c7; /* Color de texto gris */
-  text-decoration: none; /* Eliminar subrayado */
-  padding: 18px 15px;
-  font-size: 15px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  border-radius: 6px;
-  display: block;
-  white-space: nowrap;
-  text-align: center;
-  cursor: pointer;
-}
-
-/* El estilo del enlace cuando se pasa el mouse */
-.navbar .nav-link:hover {
-  color: white; /* Cambiar color de texto al pasar el mouse */
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-1px);
-}
-
-/* El estilo para el enlace cuando está en el estado activo */
-.navbar .nav-link.active {
-  color: #3498db; /* Color activo */
-  background-color: rgba(52, 152, 219, 0.15); /* Fondo activo */
-  font-weight: 600;
-}
-
-
-  
-  .user-dropdown {
-      right: 0;
-      min-width: 160px;
-  }
-  
-  .language-select {
-      font-size: 13px;
-      padding: 6px 25px 6px 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 0;
   }
 }
 
 @media (max-width: 576px) {
-  .navbar {
-      padding: 0 8px;
-  }
-  
   .navbar-brand {
-      font-size: 16px;
+    font-size: 16px;
   }
-  
-  .navbar-right {
-      gap: 8px;
-  }
-  
   .language-select {
-      font-size: 12px;
-      padding: 5px 20px 5px 8px;
+    font-size: 12px;
+    padding: 5px 20px 5px 8px;
   }
-  
-  .user-dropdown {
-      right: -10px;
-      min-width: 150px;
-  }
-  
-  .dropdown-item {
-      padding: 10px 12px;
-      font-size: 13px;
-  }
-  
   .theme-toggle {
-      width: 32px;
-      height: 32px;
-      font-size: 18px;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+  .user-dropdown {
+    right: -10px;
+    min-width: 150px;
+  }
+  .dropdown-item {
+    padding: 10px 12px;
+    font-size: 13px;
   }
 }
-
-/* Notification animations */
-@keyframes slideIn {
-  from {
-      transform: translateX(100%);
-      opacity: 0;
-  }
-  to {
-      transform: translateX(0);
-      opacity: 1;
-  }
-}
-
