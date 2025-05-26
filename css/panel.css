@@ -236,7 +236,6 @@ body{
 }
 
 
-/* Mobile menu toggle */
 /* Navbar CSS */
 .mobile-menu-toggle {
   display: none;
@@ -626,3 +625,4 @@ body{
     font-size: 13px;
   }
 }
+
