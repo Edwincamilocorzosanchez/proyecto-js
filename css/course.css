@@ -1,4 +1,4 @@
-/* course.css */
+/* General */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,28 +11,32 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
 .back-button {
   display: inline-block;
   margin: 20px;
   color: #2563eb;
   font-size: 16px;
   font-weight: 500;
-  text-decoration: none; /* Quita subrayado por defecto */
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .back-button:hover {
   color: #1d4ed8;
-  text-decoration: none; /* Evita subrayado al hacer hover */
+  text-decoration: none;
 }
-.boton{
+
+.boton {
   border-radius: 80%;
 }
-.start{
+
+.start {
   text-decoration: none;
   color: #fff;
 }
 
+/* Course Header */
 .course-header {
   position: relative;
   height: 250px;
@@ -59,12 +63,14 @@ body {
 
 .course-header .tags {
   margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .course-header .tag {
   background: rgba(0, 0, 0, 0.4);
   padding: 6px 12px;
-  margin-right: 8px;
   border-radius: 20px;
   font-size: 0.8em;
   display: inline-block;
@@ -88,6 +94,8 @@ body {
   height: 36px;
   border-radius: 50%;
 }
+
+/* Learn Items */
 .learn-item {
   padding: 8px 0;
   border-bottom: 1px solid #e0e0e0;
@@ -96,7 +104,7 @@ body {
   border-bottom: none;
 }
 
-
+/* Banner */
 .banner {
   width: 100%;
   height: 200px;
@@ -104,6 +112,7 @@ body {
   display: block;
 }
 
+/* Course Title */
 .course-title {
   padding: 20px;
 }
@@ -128,6 +137,7 @@ body {
   display: inline-block;
 }
 
+/* Content Grid */
 .content {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -139,10 +149,6 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-
-/* Asegura que la columna derecha se mantenga alineada */
-
-
 
 .overview,
 .prerequisites,
@@ -162,10 +168,10 @@ body {
   margin-top: 0;
 }
 
-
+/* Price Box */
 .price-box {
   position: sticky;
-  top: 20px; /* Espacio desde el borde superior cuando hace scroll */
+  top: 20px;
   background: white;
   border-radius: 10px;
   padding: 20px;
@@ -173,7 +179,6 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   height: fit-content;
 }
-
 
 .price-box h2 {
   font-size: 24px;
@@ -206,16 +211,7 @@ body {
   background: #0056b3;
 }
 
-@media (max-width: 768px) {
-  .content {
-    grid-template-columns: 1fr;
-  }
-
-  .price-box {
-    margin-top: 20px;
-  }
-}
-
+/* Module Accordion */
 .module {
   background: white;
   border-radius: 10px;
@@ -260,3 +256,54 @@ body {
   display: none;
 }
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .price-box {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    min-height: 200px;
+  }
+
+  .course-header .overlay {
+    padding: 15px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    border-radius: 10px;
+  }
+
+  .course-header h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .course-header p {
+    font-size: 0.85em;
+  }
+
+  .course-header .tags {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .course-header .tag {
+    font-size: 0.7em;
+    padding: 4px 8px;
+  }
+
+  .instructor {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
