@@ -779,5 +779,115 @@
         }
       ]
     }
-  ]
+  ], 
+  "courses": [
+    {
+      "title": "Web Development",
+      "progress": 80,
+      "image": "img/curso2.jpeg",
+      "topics": [
+        {
+          "title": "HTML Fundamentals",
+          "description": "Basic structure, elements, and semantic markup",
+          "progress": 100
+        },
+        {
+          "title": "CSS Styling",
+          "description": "Selectors, properties, layouts, and responsive design",
+          "progress": 85
+        },
+        {
+          "title": "JavaScript Basics",
+          "description": "Variables, functions, DOM manipulation",
+          "progress": 75
+        },
+        {
+          "title": "Frontend Frameworks",
+          "description": "Introduction to modern frameworks and libraries",
+          "progress": 60
+        }
+      ]
+    },
+    {
+      "title": "Data Science",
+      "progress": 60,
+      "image": "img/ventana2.jpeg",
+      "topics": [
+        {
+          "title": "Python Programming",
+          "description": "Basic syntax, data structures, and functions",
+          "progress": 90
+        },
+        {
+          "title": "Data Analysis",
+          "description": "Working with pandas and numpy",
+          "progress": 70
+        },
+        {
+          "title": "Machine Learning",
+          "description": "Basic algorithms and model training",
+          "progress": 45
+        },
+        {
+          "title": "Data Visualization",
+          "description": "Creating charts and interactive visualizations",
+          "progress": 35
+        }
+      ]
+    },
+    {
+      "title": "Mobile Development",
+      "progress": 45,
+      "image": "img/ventana3.jpeg",
+      "topics": [
+        {
+          "title": "Mobile UI Design",
+          "description": "Principles of mobile interface design",
+          "progress": 80
+        },
+        {
+          "title": "React Native Basics",
+          "description": "Components, navigation, and state management",
+          "progress": 55
+        },
+        {
+          "title": "Native APIs",
+          "description": "Camera, location, and device features",
+          "progress": 30
+        },
+        {
+          "title": "App Publishing",
+          "description": "Preparing and deploying to app stores",
+          "progress": 15
+        }
+      ]
+    },
+    {
+      "title": "Cloud Computing",
+      "progress": 30,
+      "image": "img/ventana3.jpeg",
+      "topics": [
+        {
+          "title": "Cloud Fundamentals",
+          "description": "Basic concepts and service models",
+          "progress": 100
+        },
+        {
+          "title": "AWS Services",
+          "description": "EC2, S3, and core AWS services",
+          "progress": 40
+        },
+        {
+          "title": "Cloud Security",
+          "description": "Security best practices and implementation",
+          "progress": 25
+        },
+        {
+          "title": "Serverless Computing",
+          "description": "Lambda functions and serverless architecture",
+          "progress": 15
+        }
+]
+}
+]
 }
