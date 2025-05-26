@@ -1,106 +1,84 @@
 fetch('data/courses.json')
   .then(response => response.json())
   .then(data => {
-    const courses = data.cards; // Aquí seleccionas solo 'tarjetas'
+    const container = document.getElementById('categories-container');
 
-    const container = document.getElementById('courses-container');
+    data.categories.forEach(category => {
+      // Crear sección de categoría
+      const section = document.createElement('section');
+      section.classList.add('category');
 
-    courses.forEach(course => {
-      const card = document.createElement('div');
-      card.classList.add('card');
+      const title = document.createElement('h3');
+      title.textContent = category.name;
+      section.appendChild(title);
 
-      card.innerHTML = `
-        <div class="frente-tarjeta">
-          <div class="trasera-tarjeta">
-            <div class="tarjeta-etiquetas">
-              <span class="etiqueta level">${course.tag}</span>
-              <span class="etiqueta duration">${course.tag_2}</span>
+      const cardGrid = document.createElement('div');
+      cardGrid.classList.add('card-grid');
+
+      // Agregar tarjetas de cursos
+      category.courses.forEach(course => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        card.innerHTML = `
+       
+          <div class="frente-tarjeta">
+            <div class="trasera-tarjeta">
+              <div class="imagen-con-etiquetas">
+                <img src="${course.image}" alt="${course.title}" />
+                <span class="etiqueta level">${course.tag}</span>
+                <span class="etiqueta duration">${course.tag_2}</span>
+              </div>
+              <div class="title">${course.title}</div>
+              <div class="description">${course.description}</div>
+              <div class="card-buttons">
+                <button class="enroll-btn" data-course='${JSON.stringify(course).replace(/'/g, "&apos;")}'>Enroll Now</button>
+                <button class="info-btn">More Info</button>
+              </div>
             </div>
-            <img src="${course.image}" alt="${course.title}" />
-            <div class="title">${course.title}</div>
-            <div class="description">${course.description}</div>
-            <div class="card-buttons">
-              <button class="enroll-btn">Enroll Now</button>
-              <button class="info-btn">More Info</button>
+            <div class="detras-tarjeta">
+              <div class="detras-tarjeta-content">
+                <h3>Prerequisites</h3>
+                <p>${course.prerequisites}</p>
+                <h3>What You'll Learn</h3>
+                <p>${course.whatYouWillLearn}</p>
+                <h3>Course Structure</h3>
+                <p>${course.structure}</p>
+              </div>
+              <button class="close-btn">Close</button>
             </div>
           </div>
-          <div class="detras-tarjeta">
-            <h3>Prerequisites</h3>
-            <p>${course.prerequisites}</p>
-            <h3>What You'll Learn</h3>
-            <p>${course.whatYouWillLearn}</p>
-            <h3>Course Structure</h3>
-            <p>${course.structure}</p>
-            <button class="close-btn">Close</button>
-          </div>
-        </div>
-      `;
+        `;
 
-      container.appendChild(card);
 
-      const infoBtn = card.querySelector('.info-btn');
-      const closeBtn = card.querySelector('.close-btn');
 
-      infoBtn.addEventListener('click', () => {
-        card.classList.add('flipped');
+
+       setTimeout(() => {
+          const infoBtn = card.querySelector('.info-btn');
+          const closeBtn = card.querySelector('.close-btn');
+          const enrollBtn = card.querySelector('.enroll-btn');
+        enrollBtn?.addEventListener('click', () => {
+          const courseData = JSON.parse(enrollBtn.getAttribute('data-course').replace(/&apos;/g, "'"));
+          localStorage.setItem('selectedCourse', JSON.stringify(courseData));
+          window.location.href = 'course.html';
+        });
+
+
+
+          infoBtn?.addEventListener('click', () => {
+            card.classList.add('flipped');
+          });
+
+          closeBtn?.addEventListener('click', () => {
+            card.classList.remove('flipped');
+          });
+        }, 0);
+
+        cardGrid.appendChild(card);
       });
 
-      closeBtn.addEventListener('click', () => {
-        card.classList.remove('flipped');
-      });
+      section.appendChild(cardGrid);
+      container.appendChild(section);
     });
-  });
-
-
-fetch('data/courses.json')
-  .then(response => response.json())
-  .then(data => {
-    const courses = data.tarjetas; // Aquí seleccionas solo 'tarjetas'
-
-    const container = document.getElementById('courses-containe');
-
-    courses.forEach(course => {
-      const card = document.createElement('div');
-      card.classList.add('card');
-
-      card.innerHTML = `
-        <div class="frente-tarjeta">
-          <div class="trasera-tarjeta">
-            <div class="tarjeta-etiquetas">
-              <span class="etiqueta level">${course.tag}</span>
-              <span class="etiqueta duration">${course.tag_2}</span>
-            </div>
-            <img src="${course.image}" alt="${course.title}" />
-            <div class="title">${course.title}</div>
-            <div class="description">${course.description}</div>
-            <div class="card-buttons">
-              <button class="enroll-btn">Enroll Now</button>
-              <button class="info-btn">More Info</button>
-            </div>
-          </div>
-          <div class="detras-tarjeta">
-            <h3>Prerequisites</h3>
-            <p>${course.prerequisites}</p>
-            <h3>What You'll Learn</h3>
-            <p>${course.whatYouWillLearn}</p>
-            <h3>Course Structure</h3>
-            <p>${course.structure}</p>
-            <button class="close-btn">Close</button>
-          </div>
-        </div>
-      `;
-
-      container.appendChild(card);
-
-      const infoBtn = card.querySelector('.info-btn');
-      const closeBtn = card.querySelector('.close-btn');
-
-      infoBtn.addEventListener('click', () => {
-        card.classList.add('flipped');
-      });
-
-      closeBtn.addEventListener('click', () => {
-        card.classList.remove('flipped');
-      });
-    });
-  });
+  })
+  .catch(error => console.error('Error loading JSON:', error));

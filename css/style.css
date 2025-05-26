@@ -1,30 +1,59 @@
+/* Estilo global */
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-size: 1.1rem;
+  background: #f8f9fa;
   margin: 0;
   padding: 20px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
 
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
 
-.cards {
+h3 {
+  color: #111313;
+}
+
+.category {
+  margin-bottom: 40px;
+}
+
+.category h3 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* Tarjetas */
+.card-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
 }
 
-
 .card {
   width: 300px;
   height: 420px;
   perspective: 1000px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
 .frente-tarjeta {
   width: 100%;
   height: 100%;
-  gap: 40px;
   transition: transform 0.8s;
   transform-style: preserve-3d;
   position: relative;
@@ -34,70 +63,142 @@ body {
   transform: rotateY(180deg);
 }
 
-.trasera-tarjeta, .detras-tarjeta {
+/* Parte frontal y trasera */
+.trasera-tarjeta,
+.detras-tarjeta {
   position: absolute;
   width: 100%;
-  
   height: 100%;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
-.trasera-tarjeta img {
+/* Imagen con etiquetas */
+.imagen-con-etiquetas {
+  position: relative;
   width: 100%;
   height: 150px;
-  object-fit: cover;
+  overflow: hidden;
 }
 
-.trasera-tarjeta, .detras-tarjeta {
+.imagen-con-etiquetas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.etiqueta {
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 0.75em;
+  font-weight: bold;
+  border-radius: 999px;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.etiqueta.level {
+  top: 10px;
+  left: 10px;
+}
+
+.etiqueta.duration {
+  top: 10px;
+  right: 10px;
+}
+
+
+/* Contenido frontal */
+.trasera-tarjeta {
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 15px;
 }
 
 .trasera-tarjeta .title {
   font-weight: bold;
   font-size: 1.2em;
+  margin: 15px 0 8px;
+  text-align: center;
 }
 
 .trasera-tarjeta .description {
-  font-size: 0.9em;
+  font-size: 1.0em;
   flex-grow: 1;
   margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #444;
 }
 
-.detras-tarjeta {
-  transform: rotateY(180deg);
-  overflow-y: auto;
-}
-
-.detras-tarjeta::-webkit-scrollbar {
-  width: 6px;
-}
-.detras-tarjeta::-webkit-scrollbar-thumb {
-  background: #007bff;
-  border-radius: 10px;
-}
-
+/* Botones */
 .card-buttons {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+  justify-content: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 10px;
 }
 
 button {
   border: none;
   background: #007bff;
   color: white;
-  padding: 10px;
+  padding: 10px 16px;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 0.9em;
+  transition: background 0.2s ease;
 }
 
 button:hover {
   background: #0056b3;
+}
+
+/* Parte trasera girada */
+.detras-tarjeta {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15px;
+}
+
+.detras-tarjeta-content {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 6px;
+  margin-bottom: 10px;
+}
+
+.detras-tarjeta-content::-webkit-scrollbar {
+  width: 6px;
+}
+.detras-tarjeta-content::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 10px;
+}
+
+.detras-tarjeta .close-btn {
+  margin-top: 10px;
+  align-self: center;
+  background: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.0em;
 }

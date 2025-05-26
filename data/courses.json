@@ -1,67 +1,783 @@
 {
-  "tarjetas": [
-  {
-    "title": "Unity Game Development",
-    "description": "Create immersive 3D games with Unity. Learn C# programming, game physics, and professional game development...",
-    "tag":"Intermediate",
-    "tag_2":"12 weeks",
-    "image": "img/img-tarjeta.jpeg",
-    "prerequisites": "Basic programming knowledge in any language. Understanding of 3D geometry is helpful but not required.",
-    "whatYouWillLearn": "Build complete 3D games, master C# programming, implement game physics, create engaging UI systems, and optimize game performance.",
-    "structure": "24 interactive lessons, 12 hands-on projects, 4 major game development assignments, and a final capstone project."
-  },
-  {
-    "title": "Unreal Engine Basics",
-    "description": "Master the fundamentals of Unreal Engine 5. Cover Blueprint visual scripting, level design, and game...",
-    "tag":"Beginner",
-    "tag_2":"8 weeks",
-    "image": "img/img-tarjeta2.jpeg",
-    "prerequisites": "No prior experience required. Basic computer skills and understanding of gaming concepts recommended.",
-    "whatYouWillLearn": "Create basic games using Blueprints, design game levels, implement basic AI, and understand game optimization techniques.",
-    "structure": "16 lessons, 8 practical exercises, 4 mini-projects, and a final game project."
-  },
+  "categories": [
     {
-    "title": "Unity Game Development",
-    "description": "Create immersive 3D games with Unity.",
-    "tag": "All level",
-    "tag_2":"10 weeks",
-    "image": "img/img-tarjeta3.jpeg",
-    "prerequisites": "Basic programming knowledge in any language. Understanding of 3D geometry is helpful but not required.",
-    "whatYouWillLearn": "Build complete 3D games, master C# programming, implement game physics, create engaging UI systems, and optimize game performance.",
-    "structure": "24 interactive lessons, 12 hands-on projects, 4 major game development assignments, and a final capstone project."
-  }
-],
-  "cards":[
-      {
-    "title": "Unity Game Development",
-    "description": "Create immersive 3D games with Unity. Learn C# programming, game physics, and professional game development...",
-    "tag":"Intermediate",
-    "tag_2":"12 weeks",
-    "image": "img/img-tarjeta.jpeg",
-    "prerequisites": "Basic programming knowledge in any language. Understanding of 3D geometry is helpful but not required.",
-    "whatYouWillLearn": "Build complete 3D games, master C# programming, implement game physics, create engaging UI systems, and optimize game performance.",
-    "structure": "24 interactive lessons, 12 hands-on projects, 4 major game development assignments, and a final capstone project."
-  },
-  {
-    "title": "Unreal Engine Basics",
-    "description": "Master the fundamentals of Unreal Engine 5. Cover Blueprint visual scripting, level design, and game...",
-    "tag":"Beginner",
-    "tag_2":"8 weeks",
-    "image": "img/img-tarjeta2.jpeg",
-    "prerequisites": "No prior experience required. Basic computer skills and understanding of gaming concepts recommended.",
-    "whatYouWillLearn": "Create basic games using Blueprints, design game levels, implement basic AI, and understand game optimization techniques.",
-    "structure": "16 lessons, 8 practical exercises, 4 mini-projects, and a final game project."
-  },
+      "name": "Video Games",
+      "courses": [
+        {
+          "title": "Unity Game Development",
+          "description": "Create immersive 3D games with Unity. Learn C# programming, game physics, and professional game development...",
+          "tag":"Intermediate",
+          "tag_2":"12 weeks",
+          "image": "img/img-tarjeta.jpeg",
+          "prerequisites": "Basic programming knowledge in any language. Understanding of 3D geometry is helpful but not required.",
+          "whatYouWillLearn": "Build complete 3D games, master C# programming, implement game physics, create engaging UI systems, and optimize game performance.",
+          "structure": "24 interactive lessons, 12 hands-on projects, 4 major game development assignments, and a final capstone project.",
+          "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermediate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Create immersive 3D games with Unity. Learn C# programming, game physics, and professional game development workflows.",
+          "prerequisites_list": [ 
+          "Basic programming knowledge in any language.",
+          "Understanding of 3D geometry is helpful but not required."],
+          "whatYouWillLearn_list": [ 
+          "Build complete 3D games",
+          "Master C# programming",
+          "Implement game physics",
+          "Create engaging UI systems",
+          "Optimize game performance" ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        },
+        {
+          "title": "Unreal Engine Basics",
+          "description": "Master the fundamentals of Unreal Engine 5. Cover Blueprint visual scripting, level design, and game...",
+          "tag":"Beginner",
+          "tag_2":"8 weeks",
+          "image": "img/img-tarjeta2.jpeg",
+          "prerequisites": "No prior experience required. Basic computer skills and understanding of gaming concepts recommended.",
+          "whatYouWillLearn": "Create basic games using Blueprints, design game levels, implement basic AI, and understand game optimization techniques.",
+          "structure": "16 lessons, 8 practical exercises, 4 mini-projects, and a final game project.",
+                    "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermediate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Master the fundamentals of Unreal Engine 5. Cover Blueprint visual scripting, level design, and game optimization.",
+          "prerequisites_list": [ 
+          "No prior experience required",
+          "Basic computer skills and understanding of gaming concepts recommended."],
+          "whatYouWillLearn_list": [ 
+          "Create basic games using Blueprints",
+          "design game levels",
+          "implement basic AI",
+          "and understand game optimization techniques." ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        },
+        {
+          "title": "Game Design Principles",
+          "description": "Learn essential game design concepts including mechanics, dynamics, aesthetics, and player psychology.",
+          "tag": "All level",
+          "tag_2":"10 weeks",
+          "image": "img/img-tarjeta3.jpeg",
+          "prerequisites": "No technical prerequisites. Passion for games and creative thinking required.",
+          "whatYouWillLearn": "Design engaging game mechanics, balance gameplay, create compelling narratives, and understand player psychology.",
+          "structure": "20 theory lessons, 10 design workshops, 5 game analysis projects, and a final game design document.",
+                    "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermedate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Learn essential game design concepts including mechanics, dynamics, aesthetics, and player psychology.",
+          "prerequisites_list": [
+            "No technical prerequisites",
+            "Passion for games and creative thinking required." ],
+          "whatYouWillLearn_list": [ 
+            "Design engaging game mechanics",
+            "balance gameplay",
+            "create compelling narratives",
+            "and understand player psychology." ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        }
+      ]
+    },
+        {
+      "name": "Backend",
+      "courses": [
+        {
+          "title": "Node.js Development",
+          "description": "Build high-performance backend services with Node.js. Cover Express.js, MongoDB, and microservices...",
+          "tag":"Advanced",
+          "tag_2":"14 weeks",
+          "image": "img/node-js.jpeg",
+          "prerequisites": "trong JavaScript knowledge, basic understanding of backend development and databases.",
+          "whatYouWillLearn": "Build scalable APIs, implement authentication, handle database operations, and deploy microservices.",
+          "structure": "28 lessons, 14 coding projects, 4 major applications, and a final system architecture project.",
+                    "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermediate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Build high-performance backend services with Node.js. Cover Express.js, MongoDB, and microservices architecture.",
+          "prerequisites_list": [ 
+            "Strong JavaScript knowledge, basic understanding of backend development and databases." ],
+          "whatYouWillLearn_list": [
+            "Build scalable APIs",
+            "implement authentication",
+            "handle database operations",
+            "and deploy microservices." ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        },
+        {
+          "title": "Database Design",
+          "description": "Comprehensive guide to database design. Learn SQL, NoSQL, data modeling, and performance optimization.",
+          "tag":"Intermediate",
+          "tag_2":"10 weeks",
+          "image": "img/database.jpeg",
+          "prerequisites": "Basic understanding of programming concepts and data structures.",
+          "whatYouWillLearn": "Design efficient databases, write complex queries, optimize performance, and handle large datasets.",
+          "structure": "20 lectures, 10 practical sessions, 5 database design projects, and a final optimization challenge.",
+                    "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermedate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Comprehensive guide to database design. Learn SQL, NoSQL, data modeling, and performance optimization.",
+          "prerequisites_list": [ "Basic understanding of programming concepts and data structures." ],
+          "whatYouWillLearn_list": [ 
+          "Design efficient databases",
+          "write complex queries",
+          "optimize performance",
+          "and handle large datasets." ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        },
+        {
+          "title": "API Development",
+          "description": "Create robust APIs using REST and GraphQL. Focus on security, documentation, and best practices.",
+          "tag": "Intermediate",
+          "tag_2":"8 weeks",
+          "image": "img/api.jpg",
+          "prerequisites": "Experience with web development and basic understanding of HTTP protocols.",
+          "whatYouWillLearn": "Design RESTful APIs, implement GraphQL, secure endpoints, and create comprehensive documentation.",
+          "structure": "16 lessons, 8 API projects, 4 security workshops, and a final API gateway project.",
+                    "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermedate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Create robust APIs using REST and GraphQL. Focus on security, documentation, and best practices.",
+          "prerequisites_list": [ "Experience with web development and basic understanding of HTTP protocols." ],
+          "whatYouWillLearn_list": [ 
+          "Design RESTful APIs",
+          "implement GraphQL",
+          "secure endpoints",
+          "and create comprehensive documentation." ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        }
+      ]
+    },
     {
-    "title": "Unity Game Development",
-    "description": "Create immersive 3D games with Unity.",
-    "tag": "All level",
-    "tag_2":"10 weeks",
-    "image": "img/img-tarjeta3.jpeg",
-    "prerequisites": "Basic programming knowledge in any language. Understanding of 3D geometry is helpful but not required.",
-    "whatYouWillLearn": "Build complete 3D games, master C# programming, implement game physics, create engaging UI systems, and optimize game performance.",
-    "structure": "24 interactive lessons, 12 hands-on projects, 4 major game development assignments, and a final capstone project."
-  }
+      "name": "Frontend",
+      "courses": [
+        {
+          "title": "React Mastery",
+          "description": "Advanced React concepts including hooks, context, Redux, and performance optimization techniques.",
+          "tag":"Advanced",
+          "tag_2":"12 weeks",
+          "image": "img/React.jpeg",
+          "prerequisites": "trong JavaScript knowledge and experience with React basics.",
+          "whatYouWillLearn": "Master advanced React patterns, state management, performance optimization, and testing strategies.",
+          "structure": "24 lessons, 12 advanced projects, 6 optimization workshops, and a final enterprise-level application.",
+                    "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermediate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Advanced React concepts including hooks, context, Redux, and performance optimization techniques.",
+          "prerequisites_list": [ "Strong JavaScript knowledge and experience with React basics." ],
+          "whatYouWillLearn_list": [
+          "Master advanced React patterns",
+          "state management",
+          "performance optimization",
+          "and testing strategies." ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        },
+        {
+          "title": "Angular Advanced",
+          "description": "Deep dive into Angular framework. Cover state management, testing, and enterprise patterns.",
+          "tag":"Advanced",
+          "tag_2":"14 weeks", 
+          "image": "img/Angular.jpeg",
+          "prerequisites": "Experience with Angular basics and TypeScript.",
+          "whatYouWillLearn": "Implement complex state management, write comprehensive tests, and build enterprise applications.",
+          "structure": "28 lessons, 14 projects, 7 testing workshops, and a final enterprise application.",
+                    "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermedate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Deep dive into Angular framework. Cover state management, testing, and enterprise patterns.",
+          "prerequisites_list": [ "Experience with Angular basics and TypeScript." ],
+          "whatYouWillLearn_list": [ 
+          "Implement complex state management",
+          "write comprehensive tests",
+          "and build enterprise applications." ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        },
+        {
+          "title": "CSS Architecture",
+          "description": "Learn to build maintainable CSS at scale using modern methodologies and tools.",
+          "tag": "Intermediate",
+          "tag_2":"6 weeks",
+          "image": "img/CSS.jpeg",
+          "prerequisites": "Strong understanding of CSS basics and experience with responsive design.",
+          "whatYouWillLearn": "Design scalable CSS architectures, implement modern CSS features, and optimize performance.",
+          "structure": "12 lessons, 6 styling projects, 3 architecture workshops, and a final design system project.",
+                    "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermedate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Learn to build maintainable CSS at scale using modern methodologies and tools",
+          "prerequisites_list": [ "Strong understanding of CSS basics and experience with responsive design." ],
+          "whatYouWillLearn_list": [ 
+          "Design scalable CSS architectures",
+          "implement modern CSS features",
+          "and optimize performance."],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        }
+      ]
+    },
+        {
+      "name": "School",
+      "courses": [
+        {
+          "title": "Mathematics 101",
+          "description": "Introduction to core mathematical concepts including algebra, calculus, and probability theory.",
+          "tag":"Beginner",
+          "tag_2":"16 weeks",
+          "image": "img/101.jpeg",
+          "prerequisites": "igh school mathematics or equivalent.",
+          "whatYouWillLearn": "Master fundamental mathematical concepts, solve complex problems, and apply mathematical thinking.",
+          "structure": "32 lectures, 16 problem-solving sessions, 8 assessments, and a final examination.",
+                    "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermediate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Introduction to core mathematical concepts including algebra, calculus, and probability theory.",
+          "prerequisites_list": [ "High school mathematics or equivalent." ],
+          "whatYouWillLearn_list": [ 
+          "Master fundamental mathematical concepts",
+          "solve complex problems",
+          "and apply mathematical thinking."],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        },
+        {
+          "title": "Physics Basics",
+          "description": "Explore fundamental physics principles including mechanics, thermodynamics, and wave theory.",
+          "tag":"Beginner",
+          "tag_2":"16 weeks",
+          "image": "img/physics.jpeg",
+          "prerequisites": "Basic mathematics knowledge including algebra and trigonometry.",
+          "whatYouWillLearn": "Understand core physics principles, solve physics problems, and conduct basic experiments.",
+          "structure": "32 lectures, 16 lab sessions, 8 problem-solving workshops, and a final project.",
+          "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermedate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Explore fundamental physics principles including mechanics, thermodynamics, and wave theory.",
+          "prerequisites_list": [ "Basic mathematics knowledge including algebra and trigonometry." ],
+          "whatYouWillLearn_list": [ 
+          "Understand core physics principles",
+          "solve physics problems",
+          "and conduct basic experiments." ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        },
+        {
+          "title": "Chemistry Essentials",
+          "description": "Learn core chemistry concepts including atomic structure, chemical bonding, and reactions.",
+          "tag": "Beginner",
+          "tag_2":"16 weeks",
+          "image": "img/Chemistry.jpeg",
+          "prerequisites": "Basic understanding of mathematics and scientific notation.",
+          "whatYouWillLearn": "Master fundamental chemistry concepts, perform chemical calculations, and understand lab safety.",
+          "structure": "32 lectures, 16 lab sessions, 8 practical assessments, and a final examination.",
+          "price": "$99.99",
+          "duration": "12 weeks",
+          "level": "Intermedate",
+          "students": "250+ enrolled",
+          "instructor": {
+            "name": "Dr. John Smith",
+            "image": "img/instructor.jpg"
+          },
+          "overview": "Learn core chemistry concepts including atomic structure, chemical bonding, and reactions.",
+          "prerequisites_list": [ "Basic understanding of mathematics and scientific notation." ],
+          "whatYouWillLearn_list": [ 
+          "Master fundamental chemistry concepts",
+          "perform chemical calculations",
+          "and understand lab safety." ],
+          "structure_detailed": [
+            {
+              "title": "Module 1",
+              "name": "Introduction to the Course",
+              "lessons": [
+              "Course overview and objectives",
+              "Setting up your development environment",
+              "Understanding the course structure"
+            ]
+            },
+            {
+              "title": "Module 2",
+              "name": "Fundamentals and Core Concepts",
+              "lessons": [
+              "Basic principles and terminology",
+              "Essential tools and frameworks",
+              "Best practices and conventions"
+            ]
+            },
+            {
+              "title": "Module 3",
+              "name": "Advanced Topics",
+              "lessons": [
+                "Advanced techniques and patterns",
+                "Performance optimization",
+                "Real-world applications"
+              ]
+            },
+            {
+              "title": "Module 4",
+              "name": "Project Work",
+              "lessons": [
+                "Planning and requirements gathering",
+                "Implementation and coding",
+                "Testing and deployment"
+              ]
+            }
+          ]  
+        }
+      ]
+    }
   ]
-
 }
