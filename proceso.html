@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Procesos</title>
   <link rel="stylesheet" href="css/proceso.css">
+  <script type="module" src="js/proceso.js"></script>
 </head>
 <body>
   <h1>Learning Progress</h1>
@@ -33,5 +34,19 @@
       <p class="azul">Click to view topics</p>
     </div>
   </div>
+  <div id="popup-card" class="popup-card" style="display: none;">
+  <div class="popup-header">
+    <h2 id="popup-title"></h2>
+    <span id="popup-close" class="popup-close">&times;</span>
+  </div>
+  <div class="popup-progress-container">
+    <div id="popup-image" class="popup-image"></div>
+    <div class="popup-total-progress">
+      <div id="popup-progress-bar" class="progress-bar"></div>
+      <span id="popup-progress-text"></span>
+    </div>
+  </div>
+  <div id="popup-content" class="popup-content"></div>
+</div>
 </body>
 </html>
