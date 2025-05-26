@@ -1,73 +1,94 @@
-.tarjetas{
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #fafbfc;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
-.azul{
-    font-size: 20px;
-    color: rgb(0, 149, 255);
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
-.proce1{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-    font-size: 25px;
-    width: 250px;
-    height: 300px;
+
+.tarjetas {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.proce2{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-    font-size: 25px;
-    width: 250px;
-    height: 300px;
+
+.azul {
+  font-size: 10px;
+  color: rgb(0, 149, 255);
+  margin-top: 10px;
 }
-.proce3{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-    font-size: 25px;
-    width: 250px;
-    height: 300px;
+
+.proce1,
+.proce2,
+.proce3,
+.proce4 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 18px 16px 16px 16px;
+  text-align: left;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s;
+  font-size: 1.1rem;
+  width: 250px;
+  min-width: 220px;
+  max-width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.proce4{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-    font-size: 25px;
-    width: 250px;
-    height: 300px;
+
+.proce1:hover,
+.proce2:hover,
+.proce3:hover,
+.proce4:hover {
+  transform: translateY(-7px) scale(1.03);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.13);
 }
-.proce1:hover{
-    transform: translateY(-5px);
+
+.proce1 h2,
+.proce2 h2,
+.proce3 h2,
+.proce4 h2 {
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  font-weight: bold;
 }
-.proce2:hover{
-    transform: translateY(-5px);
+
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 100%;
 }
-.proce3:hover{
-    transform: translateY(-5px);
+
+progress::-webkit-progress-value {
+  background-color: #2196f3;
+  border-radius: 400px;
+  transition: width 0.4s;
 }
-.proce4:hover{
-    transform: translateY(-5px);
-}
+
+
+
+/* Popup estilos */
 .popup-card {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 500px;
+  width: 600px;
   max-height: 80vh;
   transform: translate(-50%, -50%);
   background: white;
@@ -76,17 +97,14 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   z-index: 9999;
   font-family: sans-serif;
+  display: none;
 }
 
 .popup-header {
-  position: relative;
-  background: #222;
+  position: absolute;
+  top: 20px;
+  left: 20px;
   color: white;
-  padding: 15px;
-  font-size: 1.3em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .popup-close {
@@ -95,7 +113,7 @@
 }
 
 .popup-image {
-  height: 120px;
+  height: 180px;
   background-size: cover;
   background-position: center;
 }
@@ -113,7 +131,7 @@
 
 .progress-bar {
   flex-grow: 1;
-  height: 6px;
+  height: 18px;
   background: #ddd;
   border-radius: 4px;
   margin-right: 10px;
@@ -123,11 +141,10 @@
 .progress-bar::before {
   content: '';
   position: absolute;
-  height: 100%;
   background: limegreen;
   width: 0;
   transition: width 0.4s ease;
-  border-radius: 4px;
+  border-radius: 400px;
 }
 
 .popup-content {
@@ -135,7 +152,7 @@
 }
 
 .topic-block {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .topic-title {
@@ -150,17 +167,77 @@
 }
 
 .topic-progress {
-  height: 6px;
+  height: 12px;
   background: #eee;
   border-radius: 3px;
-  position: relative;
+  position: absolute;
 }
 
 .topic-progress::before {
   content: '';
   position: absolute;
-  height: 100%;
   background: dodgerblue;
   width: 0;
-  border-radius: 3px;
+  border-radius: 300px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.3rem;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    padding: 0 4vw;
+  }
+  .proce1,
+  .proce2,
+  .proce3,
+  .proce4 {
+    width: 100%;
+    font-size: 1em;
+    margin-top: 0;
+    height: auto;
+    min-height: 120px;
+    padding: 14px 10px 12px 10px;
+  }
+  progress {
+    height: 10px !important;
+  }
+  .progress-bar {
+    height: 10px;
+  }
+  .topic-progress {
+    height: 8px;
+  }
+  .popup-card {
+    width: 98vw;
+    max-width: 98vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border-radius: 0;
+  }
+  .popup-header {
+    position: static;
+    padding: 12px;
+    color: #222;
+    background: #f7f7f7;
+    border-radius: 0;
+    text-align: left;
+  }
+  .popup-image {
+    height: 120px;
+  }
+  .popup-content {
+    padding: 12px;
+  }
+  .popup-progress-container {
+    padding: 10px 8px;
+  }
 }

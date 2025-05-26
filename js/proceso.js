@@ -49,7 +49,7 @@ const jsonData = [
   }
 ];
 
-document.querySelectorAll('.proce1, .proce2, .proce3, .proce4, .proce5, .proce6').forEach(card => {
+document.querySelectorAll('.proce1, .proce2, .proce3, .proce4').forEach(card => {
   card.addEventListener('click', () => {
     const courseId = card.classList[0]; // e.g., 'proce1'
     const course = jsonData.find(c => c.id === courseId);
