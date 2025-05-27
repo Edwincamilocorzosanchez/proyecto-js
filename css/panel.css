@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -5,238 +6,370 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background-color: #f8f9fa;
+  background: #f6f8fa;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
   min-height: 100vh;
 }
-body{
-    background-color: #e0d2d23b;
+
+/* CONTENEDOR CENTRAL */
+.panel-container {
+  background: #fff;
+  max-width: 1000px; /* más ancho */
+  margin: 48px auto 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(30,41,59,0.10);
+  padding: 36px 28px 40px 28px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
-.title{
-    font-size: 50px;
+
+/* TÍTULOS */
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 18px;
+  text-align: left;
+  padding-left: 16px;
+  border-left: 4px solid #2563eb;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
 }
-.tarjetas{
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
+
+.titlebutoom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  width: 100%;
+  gap: 12px;
 }
-.tarjetas h1{
-    color: #3ec3f4;
+
+.titlebutoom .title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  text-align: left;
+  border: none;
+  padding-left: 0;
+  border-left: none;
 }
-.tarje1{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-    font-size: 25px;
-    width: 300px;
-    height: 200px;
+
+.titlebutoom button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s;
 }
-.tarje2{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; 
-    font-size: 20px; 
-    width: 300px;
-    height: 200px;
+
+.titlebutoom button:hover {
+  background: #2563eb;
 }
-.tarje3{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-    font-size: 25px;
-    width: 300px;
-    height: 200px;
+
+/* TARJETAS RESUMEN */
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  width: 100%;
+  justify-content: space-between;
 }
-.titlebutoom{
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
+
+.tarje1, .tarje2, .tarje3 {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+  padding: 24px 28px;
+  flex: 1 1 0;
+  min-width: 200px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+  transition: box-shadow 0.2s;
+  justify-content: center;
 }
-.titlebutoom button{
-    background-color: #3ec3f4;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+.tarje1 h2, .tarje2 h2, .tarje3 h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.5px;
+  text-align: left;
 }
-.cursos{
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
+
+.tarje1 h1, .tarje2 h1, .tarje3 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 0;
+  letter-spacing: -1px;
+  text-align: left;
 }
-.curso1{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; 
+
+/* CURSOS */
+.cursos {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  width: 100%;
+  justify-content: space-between;
 }
-.curso1 img{
+
+.curso1, .curso2, .curso3 {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+  padding: 0 0 18px 0;
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.curso1 img, .curso2 img, .curso3 img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+/* Barra de progreso verde */
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background: #e5e7eb;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.progress-bar-inner {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 0 0 10px 10px;
+  transition: width 0.4s;
+}
+
+/* Info del curso */
+.curso-info {
+  padding: 14px 18px 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.curso1 h3, .curso2 h3, .curso3 h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  text-align: left;
+}
+
+.curso1 p, .curso2 p, .curso3 p {
+  margin: 0;
+  color: #6b7a90;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.lado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0 0 0;
+}
+
+.verde {
+  color: #22c55e;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.buttoncursos {
+  margin: 18px 18px 0 18px;
+}
+
+.buttoncursos button {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+.buttoncursos button:hover {
+  background: #1d4ed8;
+}
+
+/* ACTIVIDAD RECIENTE */
+.recientes {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+  padding: 24px 28px 18px 28px;
+  border: none;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.recientes h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 22px 0;
+  color: #222;
+}
+
+.a1, .a2, .a3 {
+  background: #f9fafb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 14px 18px;
+  gap: 16px;
+  border: none;
+  box-shadow: none;
+}
+
+.imgactividad img {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  margin-right: 12px;
+  object-fit: cover;
+  background: #fff;
+}
+
+.ladoactividad h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.ladoactividad p {
+  margin: 0;
+  color: #6b7a90;
+  font-size: 0.97rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .panel-container {
+    max-width: 98vw;
+    padding: 18px 2vw 24px 2vw;
+  }
+  .tarjetas, .cursos {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .tarjetas, .cursos {
+    flex-direction: column;
+    gap: 18px;
+    align-items: stretch;
+  }
+  .tarje1, .tarje2, .tarje3,
+  .curso1, .curso2, .curso3 {
     width: 100%;
-    height: 200px;
+    min-width: unset;
+    max-width: 100%;
+  }
+  .curso1 img, .curso2 img, .curso3 img {
+    height: 160px;
+  }
 }
-.curso1:hover{
-     transform: translateY(-5px);
-}
-.verde{
-    color: rgb(2, 255, 171);
-}
-.lado{
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-}
-.buttoncursos{
-    text-align: center;
-}
-.buttoncursos button{
-    background-color: #3ec3f4;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
-}
-.curso2{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; 
-}
-.curso2 img{
-    width: 100%;
-    height: 200px;
-}
-.curso2:hover{
-     transform: translateY(-5px);
-}
-.curso3{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; 
-}
-.curso3 img{
-    width: 100%;
-    height: 200px;
-}
-.curso3:hover{
-     transform: translateY(-5px);
-}
-.recientes{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-}
-.a1{
-    background-color: #eeeeee;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-}
-.imgactividad{
-    align-items: center;
-    display: flex;
-}
-.imgactividad img{
-    width: 40px;
-    border-radius: 60%;
-}
-.a2{
-    background-color: #eeeeee;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-}
-.a3{
-    background-color: #eeeeee;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-}
-@media (max-width: 600px) {
-  .tarjetas,
-  .cursos,
-  .lado,
+
+@media (max-width: 700px) {
+  .panel-container {
+    max-width: 100vw;
+    padding: 10px 1vw 16px 1vw;
+    min-height: unset;
+  }
+  .title {
+    font-size: 1.2rem;
+    padding-left: 8px;
+  }
   .titlebutoom {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 8px;
   }
-
-  .tarje1,
-  .tarje2,
-  .tarje3,
-  .curso1,
-  .curso2,
-  .curso3,
-  .recientes,
-  .a1,
-  .a2,
-  .a3 {
-    width: 90%;
-    font-size: 18px;
-    margin-top: 20px;
-  }
-
-  .title {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .buttoncursos button,
-  .titlebutoom button {
-    width: 100%;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  .curso1 img,
-  .curso2 img,
-  .curso3 img {
-    height: auto;
-  }
-
-  .imgactividad {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .imgactividad img {
-    width: 60px;
-    margin-bottom: 5px;
+  .recientes {
+    padding: 14px 6px 10px 6px;
   }
 }
 
+@media (max-width: 600px) {
+  .panel-container {
+    padding: 4px 0 8px 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .tarjetas, .cursos {
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+  }
+  .tarje1, .tarje2, .tarje3,
+  .curso1, .curso2, .curso3 {
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+    padding: 12px 6px;
+  }
+  .curso1 img, .curso2 img, .curso3 img {
+    height: 120px;
+  }
+  .recientes {
+    padding: 10px 2px 8px 2px;
+  }
+}
+
+/* Mejoras de scroll horizontal para tarjetas/cursos en móviles */
+@media (max-width: 600px) {
+  .tarjetas, .cursos {
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+  }
+  .tarje1, .tarje2, .tarje3,
+  .curso1, .curso2, .curso3 {
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+  }
+  .curso1 img, .curso2 img, .curso3 img {
+    height: 120px;
+  }
+}
 
 /* Navbar CSS */
+/* (No modificar esta sección, la de tu navbar actual) */
 .mobile-menu-toggle {
   display: none;
   background: transparent;
@@ -561,7 +694,7 @@ body{
   color: #fc8181;
 }
 
-/* Responsive */
+/* Responsive Navbar */
 @media (max-width: 992px) {
   .navbar-nav {
     max-width: 400px;

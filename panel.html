@@ -7,93 +7,104 @@
     <link rel="stylesheet" href="css/panel.css">
 </head>
 <body>
+    <div class="panel-container">
+        <h1 class="title">Dashboard</h1>
+        <div class="tarjetas">
+            <div class="tarje1">
+                <h2>Active Courses</h2>
+                <h1>3</h1>
+            </div>
+            <div class="tarje2">
+                <h2>Pending Assignments</h2>
+                <h1>2</h1>
+            </div>
+            <div class="tarje3">
+                <h2>Overall Progress</h2>
+                <h1>75%</h1>
+            </div>
+        </div>
 
-    <h1 class="title"> &nbsp; &nbsp; &nbsp;Dashboard</h1>
-    <div class="tarjetas">
-        <div class="tarje1">
-            <h2>Active Courses&nbsp;</h2>
-            <h1>3&nbsp;</h1>
+        <div class="titlebutoom">
+            <h1 class="title">My Enrolled Courses</h1>
+            <a href="#"><button>Browse More Courses</button></a>
         </div>
-        <div class="tarje2">
-            <h2>Pending <br> Assignment</h2>
-            <h1>2</h1>
-        </div>
-        <div class="tarje3">
-            <h2>Overall Progress</h2>
-            <h1>75%</h1>
-        </div>
-    </div>
-    &nbsp;
-    <div class="titlebutoom">
-        <h1 class="title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Enrolled Courses</h1>
-        <a href="#"><button>Browse More Courses</button></a>
-    </div>
-    &nbsp;
-    <div class="cursos">
-        <div class="curso1">
-            <img src="img/img-tarjeta.jpeg" alt="">
-            <h3>Unity Game Development</h3>
-            <p>Dr. John Smith</p>
-            <hr>
-            <div class="lado">
-                <h3 class="verde">65% complete</h3>
-                <p>13/20 Lessons</p>
+
+        <div class="cursos">
+            <div class="curso1">
+                <img src="img/img-tarjeta.jpeg" alt="Unity Game Development">
+                <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width:65%"></div>
+                </div>
+                <div class="curso-info">
+                    <h3>Unity Game Development</h3>
+                    <p>Dr. John Smith</p>
+                    <div class="lado">
+                        <span class="verde">65% Complete</span>
+                        <span>13/20 Lessons</span>
+                    </div>
+                </div>
+                <div class="buttoncursos"><a href="cursos.html"><button>Continue Learning</button></a></div>
             </div>
-            <div class="buttoncursos"><a href="cursos.html"><button>Continue Learning</button></a></div>
-        </div>
-        <div class="curso2">
-            <img src="img/node-js.jpeg" alt="">
-            <h3>Node.js Development</h3>
-            <p>Sarah Johnson</p>
-            <hr>
-            <div class="lado">
-                <h3 class="verde">30% complete</h3>
-                <p>6/20 Lessons</p>
+            <div class="curso2">
+                <img src="img/node-js.jpeg" alt="Node.js Development">
+                <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width:30%"></div>
+                </div>
+                <div class="curso-info">
+                    <h3>Node.js Development</h3>
+                    <p>Sarah Johnson</p>
+                    <div class="lado">
+                        <span class="verde">30% Complete</span>
+                        <span>6/20 Lessons</span>
+                    </div>
+                </div>
+                <div class="buttoncursos"><a href="cursos.html"><button>Continue Learning</button></a></div>
             </div>
-            <div class="buttoncursos"><a href="cursos.html"><button>Continue Learning</button></a></div>
-        </div>
-        <div class="curso3">
-            <img src="img/React.jpeg" alt="">
-            <h3>React Mastery</h3>
-            <p>Mike Wilson</p>
-            <hr>
-            <div class="lado">
-                <h3 class="verde">85% complete</h3>
-                <p>17/20 Lessons</p>
-            </div>
-            <div class="buttoncursos"><a href="cursos.html"><button>Continue Learning</button></a></div>
-        </div>
-    </div>
-     <p> &nbsp;</p>
-    <div class="recientes">
-        <h1>Recent Activity</h1>
-        <div class="a1">
-            <div class="imgactividad">
-                <img src="img/libros.png" alt="">
-            <div class="ladoactividad">
-            <h3>Completed Chapter 5 in Unity Game Development</h3>
-            <p>2 hours ago</p>
-            </div>
+            <div class="curso3">
+                <img src="img/React.jpeg" alt="React Mastery">
+                <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width:85%"></div>
+                </div>
+                <div class="curso-info">
+                    <h3>React Mastery</h3>
+                    <p>Mike Wilson</p>
+                    <div class="lado">
+                        <span class="verde">85% Complete</span>
+                        <span>17/20 Lessons</span>
+                    </div>
+                </div>
+                <div class="buttoncursos"><a href="cursos.html"><button>Continue Learning</button></a></div>
             </div>
         </div>
-        &nbsp;
-        <div class="a2">
-            <div class="imgactividad">
-                <img src="img/mano.png" alt="">
-            <div class="ladoactividad">
-            <h3>Submitted assignment: E-commerce Platform Project</h3>
-            <p>1 day ago</p>
+
+        <div class="recientes">
+            <h1>Recent Activity</h1>
+            <div class="a1">
+                <div class="imgactividad">
+                    <img src="img/libros.png" alt="Completed Chapter">
+                </div>
+                <div class="ladoactividad">
+                    <h3>Completed Chapter 5 in Unity Game Development</h3>
+                    <p>2 hours ago</p>
+                </div>
             </div>
+            <div class="a2">
+                <div class="imgactividad">
+                    <img src="img/mano.png" alt="Submitted assignment">
+                </div>
+                <div class="ladoactividad">
+                    <h3>Submitted assignment: E-commerce Platform Project</h3>
+                    <p>1 day ago</p>
+                </div>
             </div>
-        </div>
-        &nbsp;
-        <div class="a3">
-           <div class="imgactividad">
-                <img src="img/trofeos.png" alt="">
-            <div class="ladoactividad">
-            <h3>Earned certificate in React Fundamentals</h3>
-            <p>3 days ago</p>
-            </div>
+            <div class="a3">
+                <div class="imgactividad">
+                    <img src="img/trofeos.png" alt="Earned certificate">
+                </div>
+                <div class="ladoactividad">
+                    <h3>Earned certificate in React Fundamentals</h3>
+                    <p>3 days ago</p>
+                </div>
             </div>
         </div>
     </div>
