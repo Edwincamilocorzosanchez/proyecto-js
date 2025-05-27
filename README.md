@@ -84,3 +84,6 @@ Editar
 1. *Clona el repositorio:*
    ```bash
    git clone https://github.com/tu-usuario/proyecto-js-develop.git
+
+2. Entra al enlace de netlify
+    https://lms-portal-js.netlify.app/
