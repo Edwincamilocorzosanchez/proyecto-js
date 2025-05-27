@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +10,13 @@ body {
   background-color: #f8f9fa;
   min-height: 100vh;
 }
-body{
-    background-color: #e0d2d23b;
-=======
+
 body {
   margin: 0;
   padding: 0;
   background: #faf7f7;
   font-family: 'Segoe UI', Arial, sans-serif;
->>>>>>> 63a51c6 (feat: :fire: actualizacion de posicionamiento y estilos)
+
 }
 
 .title {
@@ -323,6 +321,7 @@ body {
 }
 
 .navbar-brand .portal {
+  color: white;
   font-weight: 400;
   display: block;
 }
