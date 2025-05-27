@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <h1>Panel de Administración</h1>
+
+    <section class="admin-section">
+      <h2>Agregar Curso</h2>
+      <form id="course-form">
+        <input type="text" placeholder="Título del curso" required />
+        <input type="text" placeholder="Categoría" required />
+        <textarea placeholder="Descripción"></textarea>
+        <button type="submit">Agregar Curso</button>
+      </form>
+    </section>
+
+    <section class="admin-section">
+      <h2>Agregar Profesor</h2>
+      <form id="teacher-form">
+        <input type="text" placeholder="Nombre del profesor" required />
+        <input type="text" placeholder="Especialidad" />
+        <button type="submit">Agregar Profesor</button>
+      </form>
+    </section>
+
+    <!-- Más secciones opcionales -->
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
+
