@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="css/perfil.css" />
+</head>
+<body>
+  <div class="dropdown">
+    <button class="dropbtn">☰</button>
+    <div class="dropdown-content">
+      <a href="#">My Profile</a>
+      <a href="#">Settings</a>
+      <a href="#" class="logout">Logout</a>
+    </div>
+  </div>
+
+  <div class="header">
+    <img class="avatar" src="img/perfil.jpeg" alt="Profile" />
+    <h2>John Doe</h2>
+    <p>Computer Science Student</p>
+  </div>
+
+  <div class="container">
+    <section class="card">
+      <h3>Personal Information</h3>
+      <div class="row">
+        <div class="field">
+          <label>Full Name</label>
+          <input type="text" value="John Doe" />
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" value="john.doe@example.com" />
+        </div>
+        <div class="field">
+          <label>Phone</label>
+          <input type="text" value="+1 234 567 890" />
+        </div>
+        <div class="field">
+          <label>Location</label>
+          <input type="text" value="New York, USA" />
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Academic Information</h3>
+      <div class="row">
+        <div class="field">
+          <label>Student ID</label>
+          <input type="text" value="CS2023001" />
+        </div>
+        <div class="field">
+          <label>Program</label>
+          <input type="text" value="Bachelor of Computer Science" />
+        </div>
+        <div class="field">
+          <label>Start Date</label>
+          <input type="date" value="2023-09-01" />
+        </div>
+        <div class="field">
+          <label>Expected Graduation</label>
+          <input type="date" value="2027-06-30" />
+        </div>
+      </div>
+    </section>
+
+    <section class="card progress">
+      <h3>Progress Overview</h3>
+      <div class="progress-stats">
+        <div><strong>12</strong><p>Courses Completed</p></div>
+        <div><strong>3</strong><p>Certificates Earned</p></div>
+        <div><strong>92%</strong><p>Average Grade</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Preferences</h3>
+      <div class="preferences">
+        <label><input type="checkbox" checked /> Email Notifications</label>
+        <p>Receive updates about your courses and assignments</p>
+
+        <label><input type="checkbox" /> Public Profile</label>
+        <p>Make your profile visible to other students</p>
+
+        <label><input type="checkbox" checked /> Show Progress</label>
+        <p>Display your academic progress to others</p>
+      </div>
+    </section>
+
+    <!-- Botones Cancel y Save Changes -->
+    <div class="botones">
+      <button class="boton-cancel">Cancel</button>
+      <button class="boton-save">Save Changes</button>
+    </div>
+  </div>
+
+  <script src="js/perfil.js"></script>
+</body>
+</html>

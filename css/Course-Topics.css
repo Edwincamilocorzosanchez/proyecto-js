@@ -1,0 +1,309 @@
+/* =========================
+   Reset y fuente base
+   ========================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7fafd;
+  color: #222;
+}
+
+/* =========================
+   Contenedor principal
+   ========================= */
+.container {
+  display: flex;
+  max-width: 1100px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  overflow: hidden;
+}
+
+/* =========================
+   Barra lateral (temas)
+   ========================= */
+.sidebar {
+  width: 320px;
+  background: #f3f6fa;
+  padding: 32px 18px 32px 24px;
+  border-right: 1px solid #e0e6ef;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 18px 0;
+  color: #222; /* Título en negro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#progress {
+  font-size: 0.95rem;
+  color: #888; /* Gris para el progreso */
+  font-weight: 400;
+}
+
+/* =========================
+   Lista de temas
+   ========================= */
+#topic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#topic-list li {
+  display: flex; /* Flex para alinear el checkmark a la izquierda */
+  align-items: center;
+  gap: 12px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background 0.18s;
+  position: relative;
+  background: none;
+}
+
+#topic-list li.active,
+#topic-list li:hover {
+  background: #eaf1ff;
+}
+
+#topic-list li.completed .checkmark {
+  background: #28a745;      /* Fondo verde */
+  color: #fff;              /* Número o chulo en blanco */
+  border: 2px solid #28a745(134, 61%, 41%);
+}
+
+#topic-list li.active .checkmark {
+  border: 2px solid #888;
+}
+
+#topic-list li.completed .checkmark::after {
+  content: "✔";
+  font-size: 1.1em;
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  color: #fff;
+}
+
+.checkmark {
+  min-width: 28px;
+  min-height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+  background: #e0e0e0;
+  color: #888; /* Números en gris */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-right: 0;
+  position: relative;
+  border: 2px solid #888; /* Borde gris por defecto */
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+#topic-list li.completed .checkmark {
+  background: #28a745;      /* Fondo verde */
+  color: #fff;              /* Número o chulo en blanco */
+  border: 2px solid #28a745; /* Borde verde cuando está completado */
+}
+
+.topic-title {
+  flex: 1;
+  font-size: 1rem;
+  color: #222; /* Título en negro */
+  font-weight: 500;
+}
+
+.topic-time {
+  font-size: 0.95rem;
+  color: #888; /* Tiempo en gris */
+  margin-left: 8px;
+}
+.back-button {
+  display: flex;
+  margin: 20px;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none; /* Quita subrayado por defecto */
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #1d4ed8;
+  text-decoration: none; /* Evita subrayado al hacer hover */
+}
+/* =========================
+   Contenido principal
+   ========================= */
+.content {
+  flex: 1;
+  padding: 36px 36px 36px 36px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.video {
+  margin-bottom: 24px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(58,122,254,0.07);
+}
+
+.content h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #222; /* Título en negro */
+}
+
+.content p {
+  font-size: 1.08rem;
+  color: #222; /* Texto en negro */
+  margin-bottom: 24px;
+}
+
+/* =========================
+   Recursos adicionales
+   ========================= */
+.resources h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #222; /* Título en negro */
+}
+
+.resources ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resources li {
+  margin-bottom: 6px;
+}
+
+.resources a {
+  color: #222; /* Enlaces en negro */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: text-decoration 0.2s;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Navegación de temas
+   ========================= */
+.navigation {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.navigation button {
+  background: #f3f6fa;
+  color: #222; /* Botones en negro */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navigation button:disabled {
+  background: #e0e6ef;
+  color: #bfcbe6;
+  cursor: not-allowed;
+}
+
+.navigation .complete-btn {
+  background: #28a745; /* Botón de completar en gris */
+  color: #fff;
+  font-weight: 600;
+}
+
+.navigation .complete-btn.completed {
+  background: #28a745 !important; /* Verde cuando está completado */
+  color: #fff !important;
+  border: none;
+}
+
+.navigation .complete-btn:hover:enabled {
+  background: #555;
+}
+
+.navigation .complete-btn.completed:hover:enabled {
+  background: #218838 !important;
+}
+
+/* =========================
+   Responsive: Tablet y móvil
+   ========================= */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    max-width: 98vw;
+    margin: 12px;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e6ef;
+    padding: 22px 10px 18px 10px;
+  }
+  .content {
+    padding: 22px 10px 22px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+  .sidebar {
+    padding: 14px 4vw 10px 4vw;
+    border-radius: 0;
+  }
+  .content {
+    padding: 14px 4vw 18px 4vw;
+  }
+  .video iframe {
+    height: 180px;
+  }
+  .navigation {
+    flex-direction: column;
+    gap: 8px;
+  }
+  #topic-list li {
+    font-size: 0.98rem;
+    padding: 10px 4px;
+    gap: 8px;
+  }
+  .checkmark {
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    font-size: 1rem;
+  }
+}

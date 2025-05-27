@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plataforma LMS</title>
+  <link rel="stylesheet" href="css/Assignments.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión de Asignaciones</h1>
+
+    <div class="alert">
+      <i class="fas fa-exclamation-triangle" style="margin-right:8px"></i>
+      Recuerda entregar tus tareas antes de la fecha límite.
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all"><i class="fas fa-list-alt"></i> All</button>
+      <button class="filter-btn" data-filter="pending"><i class="fas fa-hourglass-half"></i> Pending</button>
+      <button class="filter-btn" data-filter="completed"><i class="fas fa-check-square"></i> Completed</button>
+      <button class="filter-btn" data-filter="overdue"><i class="fas fa-exclamation-triangle"></i> Overdue</button>
+      <button class="filter-btn" data-filter="locked"><i class="fas fa-lock"></i> Locked</button>
+    </div>
+
+    <!-- WEB DEVELOPMENT -->
+    <div class="section-title">
+      <img src="https://img.icons8.com/color/36/000000/laptop--v2.png" alt="Laptop" style="vertical-align:middle;margin-right:10px;">
+      Web Development
+    </div>
+    <div class="card" data-status="pending">
+      <div class="card-header vertical">
+        <div class="status pending"><span style="font-size:1.2em;">⏳</span> Pending</div>
+        <h3 class="card-title">Final Project: E-commerce Platform</h3>
+        <a href="#" class="card-subtitle">Full Stack Development</a>
+        <div class="due-date"><span style="font-size:1.1em;">📅</span> <span style="color:#ef4444;">Due: Mar 14, 2024</span></div>
+      </div>
+      <hr class="card-divider">
+      <div class="card-body">
+        <p>Build a complete e-commerce platform using React, Node.js, and MongoDB. Implement user authentication, product management, shopping cart, and payment processing.</p>
+        <div class="details">
+          <div><span style="font-size:1.1em;">🏅</span> Points: 100</div>
+          <div><span style="font-size:1.1em;">📘</span> Type: Project</div>
+          <div><span style="font-size:1.1em;">📚</span> Modules: Frontend, Backend, Database</div>
+        </div>
+        <div class="attachments">
+          <span style="font-size:1.1em;">📎</span> 2 attachment(s)
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="submit-btn"><span style="font-size:1.1em;">📤</span> Submit Assignment</button>
+      </div>
+    </div>
+
+    <!-- DATA SCIENCE -->
+    <div class="section-title">
+      <img src="https://img.icons8.com/color/36/000000/combo-chart--v2.png" alt="Chart" style="vertical-align:middle;margin-right:10px;">
+      Data Science
+    </div>
+    <div class="card" data-status="locked">
+      <div class="card-header vertical">
+        <div class="status locked"><span style="font-size:1.2em;">🔒</span> Locked</div>
+        <h3 class="card-title">Data Analysis Report</h3>
+        <a href="#" class="card-subtitle">Data Science Fundamentals</a>
+        <div class="due-date"><span style="font-size:1.1em;">📅</span> Feb 19, 2024</div>
+      </div>
+      <hr class="card-divider">
+      <div class="card-body">
+        <p>Analyze the provided dataset using Python and Pandas. Create visualizations and write a comprehensive report on your findings.</p>
+        <div class="details">
+          <div><span style="font-size:1.1em;">🏅</span> Points: 50</div>
+          <div><span style="font-size:1.1em;">📘</span> Type: Report</div>
+          <div><span style="font-size:1.1em;">📚</span> Modules: Data Analysis, Statistical Methods</div>
+        </div>
+        <div class="attachments">
+          <span style="font-size:1.1em;">📎</span> 1 attachment(s)
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="submit-btn locked" disabled><span style="font-size:1.1em;">🔒</span> Complete Course to Submit</button>
+      </div>
+    </div>
+
+    <!-- DESIGN -->
+    <div class="section-title">
+      <img src="https://img.icons8.com/color/36/000000/design--v2.png" alt="Design" style="vertical-align:middle;margin-right:10px;">
+      Design
+    </div>
+    <div class="card" data-status="completed">
+      <div class="card-header vertical">
+        <div class="status completed"><span style="font-size:1.2em;">✅</span> Completed</div>
+        <h3 class="card-title">UI/UX Case Study</h3>
+        <a href="#" class="card-subtitle">User Interface Design</a>
+        <div class="due-date"><span style="font-size:1.1em;">📅</span> Feb 27, 2024</div>
+      </div>
+      <hr class="card-divider">
+      <div class="card-body">
+        <p>Complete a case study on the redesign of a popular mobile application. Include user research, wireframes, and final design mockups.</p>
+        <div class="details">
+          <div><span style="font-size:1.1em;">🏅</span> Points: 75</div>
+          <div><span style="font-size:1.1em;">📘</span> Type: Case Study</div>
+          <div><span style="font-size:1.1em;">📚</span> Modules: User Research, Interface Design</div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="submit-btn" disabled><span style="font-size:1.1em;">✅</span> Submitted</button>
+      </div>
+    </div>
+
+    <!-- COMPUTER SCIENCE -->
+    <div class="section-title">
+      <img src="https://img.icons8.com/color/36/000000/artificial-intelligence.png" alt="AI" style="vertical-align:middle;margin-right:10px;">
+      Computer Science
+    </div>
+    <div class="card" data-status="locked">
+      <div class="card-header vertical">
+        <div class="status locked"><span style="font-size:1.2em;">🔒</span> Locked</div>
+        <h3 class="card-title">Algorithm Implementation</h3>
+        <a href="#" class="card-subtitle">Advanced Algorithms</a>
+        <div class="due-date"><span style="font-size:1.1em;">📅</span> Feb 14, 2024</div>
+      </div>
+      <hr class="card-divider">
+      <div class="card-body">
+        <p>Implement and optimize three different sorting algorithms. Compare their performance and write a detailed analysis.</p>
+        <div class="details">
+          <div><span style="font-size:1.1em;">🏅</span> Points: 60</div>
+          <div><span style="font-size:1.1em;">📘</span> Type: Implementation</div>
+          <div><span style="font-size:1.1em;">📚</span> Modules: Algorithm Analysis, Data Structures</div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="submit-btn locked" disabled><span style="font-size:1.1em;">🔒</span> Complete Course to Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/Assignments.js"></script>
+</body>
+</html>
