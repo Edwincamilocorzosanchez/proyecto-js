@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,236 +6,280 @@
 }
 
 body {
-  background: #f6f8fa;
-  color: #222;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f8f9fa;
   min-height: 100vh;
 }
-body{
-    background-color: #e0d2d23b;
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #faf7f7;
+  font-family: 'Segoe UI', Arial, sans-serif;
+
 }
-.title{
-    font-size: 50px;
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 32px 0 16px 0;
+  text-align: left;
+  color: #111;
 }
-.tarjetas{
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
+
+.tarjetas {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 0 auto 32px auto;
+  max-width: 1200px;
 }
-.tarjetas h1{
-    color: #3ec3f4;
+
+.tarje1, .tarje2, .tarje3 {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 24px 32px;
+  min-width: 220px;
+  text-align: left;
+  flex: 1 1 0;
 }
-.tarje1{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-    font-size: 25px;
-    width: 300px;
-    height: 200px;
+
+.tarje1 h2, .tarje2 h2, .tarje3 h2 {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  font-weight: 600;
 }
-.tarje2{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; 
-    font-size: 20px; 
-    width: 300px;
-    height: 200px;
+
+.tarje1 h1, .tarje2 h1, .tarje3 h1 {
+  font-size: 50px;
+  margin: 0;
+  font-weight: bold;
+  color: #22b8f6;
 }
-.tarje3{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-    font-size: 25px;
-    width: 300px;
-    height: 200px;
+
+.titlebutoom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 12px;
 }
-.titlebutoom{
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
+
+.titlebutoom h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: bold;
 }
-.titlebutoom button{
-    background-color: #3ec3f4;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+.titlebutoom button {
+  background: #22b8f6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
 }
-.cursos{
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
+
+.titlebutoom button:hover {
+  background: #1794c7;
 }
-.curso1{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; 
+
+.cursos {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto 32px auto;
+  width: 100%;
 }
-.curso1 img{
-    width: 100%;
-    height: 200px;
+
+.curso1, .curso2, .curso3 {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 18px 18px 24px 18px;
+  width: 340px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.curso1:hover{
-     transform: translateY(-5px);
+
+.curso1 img, .curso2 img, .curso3 img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
-.verde{
-    color: rgb(2, 255, 171);
+
+.curso1 h3, .curso2 h3, .curso3 h3 {
+  font-size: 1.1rem;
+  margin: 0 0 4px 0;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
 }
-.lado{
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
+
+.curso1 p, .curso2 p, .curso3 p {
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+  color: #444;
+  width: 100%;
+  text-align: left;
 }
-.buttoncursos{
-    text-align: center;
+
+.curso1 hr, .curso2 hr, .curso3 hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  margin: 10px 0;
 }
-.buttoncursos button{
-    background-color: #3ec3f4;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
+
+.lado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.curso2{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; 
+
+.verde {
+  color: #00e676;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
 }
-.curso2 img{
-    width: 100%;
-    height: 200px;
+
+.buttoncursos {
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
 }
-.curso2:hover{
-     transform: translateY(-5px);
+
+.buttoncursos button {
+  background: #22b8f6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 100%;
 }
-.curso3{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; 
+
+.buttoncursos button:hover {
+  background: #1794c7;
 }
-.curso3 img{
-    width: 100%;
-    height: 200px;
+
+/* Recent Activity alineado y mismo ancho que cursos */
+.recientes {
+  max-width: 1200px;
+  margin: 0 auto 32px auto;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 24px 16px 32px 16px;
 }
-.curso3:hover{
-     transform: translateY(-5px);
+
+.recientes h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: bold;
 }
-.recientes{
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
+
+.recientes > div[class^="a"] {
+  margin-bottom: 18px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
 }
-.a1{
-    background-color: #eeeeee;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
+
+.imgactividad {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
-.imgactividad{
-    align-items: center;
-    display: flex;
+
+.imgactividad img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px;
 }
-.imgactividad img{
-    width: 40px;
-    border-radius: 60%;
+
+.ladoactividad h3 {
+  font-size: 1.1rem;
+  margin: 0 0 4px 0;
+  font-weight: bold;
 }
-.a2{
-    background-color: #eeeeee;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
+
+.ladoactividad p {
+  font-size: 1rem;
+  margin: 0;
+  color: #444;
 }
-.a3{
-    background-color: #eeeeee;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: left;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;  
-}
-@media (max-width: 600px) {
-  .tarjetas,
-  .cursos,
-  .lado,
-  .titlebutoom {
+
+@media (max-width: 1100px) {
+  .cursos {
     flex-direction: column;
     align-items: center;
+    gap: 24px;
   }
-
-  .tarje1,
-  .tarje2,
-  .tarje3,
-  .curso1,
-  .curso2,
-  .curso3,
-  .recientes,
-  .a1,
-  .a2,
-  .a3 {
-    width: 90%;
-    font-size: 18px;
-    margin-top: 20px;
+  .curso1, .curso2, .curso3 {
+    width: 90vw;
+    max-width: 400px;
   }
-
-  .title {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .buttoncursos button,
-  .titlebutoom button {
-    width: 100%;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  .curso1 img,
-  .curso2 img,
-  .curso3 img {
-    height: auto;
-  }
-
-  .imgactividad {
+  .tarjetas {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 18px;
   }
+}
 
+@media (max-width: 700px) {
+  .recientes, .cursos, .tarjetas, .titlebutoom {
+    max-width: 98vw;
+    width: 98vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .recientes {
+    padding: 16px 4vw 24px 4vw;
+  }
+  .recientes h1 {
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+  }
+  .recientes > div[class^="a"] {
+    padding: 10px 8px;
+  }
   .imgactividad img {
-    width: 60px;
-    margin-bottom: 5px;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+  .ladoactividad h3 {
+    font-size: 1rem;
+  }
+  .ladoactividad p {
+    font-size: 0.95rem;
   }
 }
+
 
 /* Navbar CSS */
 /* (No modificar esta sección, la de tu navbar actual) */
@@ -563,7 +608,7 @@ body{
   color: #fc8181;
 }
 
-/* Responsive Navbar */
+/* Responsive */
 @media (max-width: 992px) {
   .navbar-nav {
     max-width: 400px;
